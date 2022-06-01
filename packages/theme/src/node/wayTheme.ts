@@ -1,6 +1,25 @@
+import type { Theme } from '@vuepress/core'
+import { themeDataPlugin } from '@vuepress/plugin-theme-data'
 import { fs, path } from '@vuepress/utils'
+import type {
+  DefaultThemeLocaleOptions,
+  DefaultThemePluginsOptions,
+} from '../shared'
+import { assignDefaultLocaleOptions } from './utils'
+export interface DefaultThemeOptions extends DefaultThemeLocaleOptions {
+  /**
+   * To avoid confusion with the root `plugins` option,
+   * we use `themePlugins`
+   */
+  themePlugins?: DefaultThemePluginsOptions
+}
 
-export const wayTheme = () => {
+export const wayTheme = ({
+  themePlugins = {},
+  ...localeOptions
+}: DefaultThemeOptions = {}): Theme => {
+  assignDefaultLocaleOptions(localeOptions)
+
   return {
     name: 'vupress-theme-way',
 
@@ -19,5 +38,9 @@ export const wayTheme = () => {
         ])
     ),
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+    plugins: [
+      // @vuepress/plugin-theme-data
+      themeDataPlugin({ themeData: localeOptions }),
+    ],
   }
 }
