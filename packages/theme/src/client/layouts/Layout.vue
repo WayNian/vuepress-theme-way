@@ -1,6 +1,7 @@
 <template>
-  <main>
+  <div>
     <Navbar></Navbar>
+    <h1 v-if="frontmatter.home">这是首页</h1>
     <Transition name="fade-slide-y" mode="out-in">
       <Page :key="pageData.path">
         <template #top>
@@ -17,11 +18,14 @@
         </template>
       </Page>
     </Transition>
-  </main>
+  </div>
 </template>
 
 <script setup lang="ts">
 import Navbar from '@theme/Navbar.vue'
 import Page from '@theme/Page.vue'
-import { pageData } from '@vuepress/client'
+import { pageData, usePageFrontmatter } from '@vuepress/client'
+import type { DefaultThemePageFrontmatter } from '../../shared'
+const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
+console.log('frontmatter', frontmatter.value.home)
 </script>

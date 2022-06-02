@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button>切换主题</button>
+    <button @click="changeMode">切换主题</button>
   </div>
 </template>
 
@@ -8,6 +8,10 @@
 import { useDarkMode, useThemeLocaleData } from '../composables'
 const isDarkMode = useDarkMode()
 const themeLocale = useThemeLocaleData()
+
+const changeMode = () => {
+  isDarkMode.value = !isDarkMode.value
+}
 </script>
 
 <style scoped></style>

@@ -1,3 +1,5 @@
-
+---
+home: true
+---
 
 ### Hellow Word
