@@ -7,10 +7,6 @@ import type {
 } from '../shared'
 import { assignDefaultLocaleOptions } from './utils'
 export interface DefaultThemeOptions extends DefaultThemeLocaleOptions {
-  /**
-   * To avoid confusion with the root `plugins` option,
-   * we use `themePlugins`
-   */
   themePlugins?: DefaultThemePluginsOptions
 }
 

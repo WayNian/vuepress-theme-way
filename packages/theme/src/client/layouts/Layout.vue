@@ -1,8 +1,8 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <h1 v-if="frontmatter.home">这是首页</h1>
-    <Transition name="fade-slide-y" mode="out-in">
+    <Home v-if="frontmatter.home"></Home>
+    <Transition v-else name="fade-slide-y" mode="out-in">
       <Page :key="pageData.path">
         <template #top>
           <slot name="page-top" />
@@ -22,6 +22,7 @@
 </template>
 
 <script setup lang="ts">
+import Home from '@theme/Home.vue'
 import Navbar from '@theme/Navbar.vue'
 import Page from '@theme/Page.vue'
 import { pageData, usePageFrontmatter } from '@vuepress/client'

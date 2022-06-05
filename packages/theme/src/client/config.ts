@@ -7,7 +7,6 @@ export default defineClientConfig({
   enhance({ app, router }) {
     resolveExtensionPage(router)
   },
-
   setup() {
     setupDarkMode()
   },

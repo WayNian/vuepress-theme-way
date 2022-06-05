@@ -14,7 +14,7 @@ const isProd = process.env.NODE_ENV === 'production'
 export default defineUserConfig({
   // set site base to default value
   base: '/',
-
+  lang: 'zh-CN',
   // site-level locales config
   locales: {
     '/': {
@@ -34,7 +34,27 @@ export default defineUserConfig({
     process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
 
   // configure default theme
-  theme: wayTheme(),
+  theme: wayTheme({
+    home: '/',
+    navbar: [
+      {
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: '标签',
+        link: '/tags',
+      },
+      {
+        text: '友链',
+        link: '/links',
+      },
+      {
+        text: '关于',
+        link: '/about',
+      },
+    ],
+  }),
 
   // configure markdown
   markdown: {

@@ -41,7 +41,7 @@ export const DEFAULT_LOCALE_OPTIONS: DefaultThemeLocaleOptions = {
 
 export const DEFAULT_LOCALE_DATA: DefaultThemeLocaleData = {
   // navbar
-  selectLanguageName: 'English',
+  selectLanguageName: '简体中文',
 }
 
 /**

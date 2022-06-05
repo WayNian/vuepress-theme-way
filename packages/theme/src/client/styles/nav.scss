@@ -1,0 +1,36 @@
+@import './variables';
+
+.navbar {
+  --navbar-line-height: calc(
+    var(--navbar-height) - 2 * var(--navbar-padding-v)
+  );
+  height: var(--navbar-height);
+  padding: var(--navbar-padding-v) var(--navbar-padding-h);
+  line-height: var(--navbar-line-height);
+  display: flex;
+
+  .logo {
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    img {
+      height: 100%;
+      margin-right: var(--navbar-padding-v);
+    }
+  }
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    li {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .navbar {
+    .navbar-menu {
+      display: none;
+    }
+  }
+}

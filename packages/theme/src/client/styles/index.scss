@@ -1,5 +1,6 @@
 @use './mode/dark.scss';
 @use './mode/light.scss';
 
-@import './variables';
-@import './normalize.scss';
+@use './normalize.scss';
+@use './nav.scss';
+@use './home.scss';
