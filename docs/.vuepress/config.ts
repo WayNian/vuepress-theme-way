@@ -8,6 +8,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
+import { navbarEn, sidebarEn } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -54,6 +55,22 @@ export default defineUserConfig({
         link: '/about',
       },
     ],
+    locales: {
+      /**
+       * English locale config
+       *
+       * As the default locale of @vuepress/theme-default is English,
+       * we don't need to set all of the locale fields
+       */
+      '/': {
+        // navbar
+        navbar: navbarEn,
+        // sidebar
+        sidebar: sidebarEn,
+        // page meta
+        editLinkText: 'Edit this page on GitHub',
+      },
+    },
   }),
 
   // configure markdown

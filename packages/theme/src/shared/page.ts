@@ -1,18 +1,17 @@
 import type { GitPluginPageData } from '@vuepress/plugin-git'
 import type { NavLink, SidebarConfig } from './nav'
 
-export interface DefaultThemePageData extends GitPluginPageData {
+export interface WayThemePageData extends GitPluginPageData {
   filePathRelative: string | null
 }
 
-export interface DefaultThemePageFrontmatter {
+export interface WayThemePageFrontmatter {
   home?: boolean
   navbar?: boolean
   pageClass?: string
 }
 
-export interface DefaultThemeHomePageFrontmatter
-  extends DefaultThemePageFrontmatter {
+export interface WayThemeHomePageFrontmatter extends WayThemePageFrontmatter {
   home: true
   heroImage?: string
   heroImageDark?: string
@@ -32,8 +31,7 @@ export interface DefaultThemeHomePageFrontmatter
   footerHtml?: boolean
 }
 
-export interface DefaultThemeNormalPageFrontmatter
-  extends DefaultThemePageFrontmatter {
+export interface WayThemeNormalPageFrontmatter extends WayThemePageFrontmatter {
   home?: false
   editLink?: boolean
   editLinkPattern?: string
@@ -43,4 +41,22 @@ export interface DefaultThemeNormalPageFrontmatter
   sidebarDepth?: number
   prev?: string | NavLink
   next?: string | NavLink
+}
+
+export interface WayThemePostFrontmatter extends WayThemePageFrontmatter {
+  title: string
+  subtitle?: string
+  editLink?: boolean
+  editLinkPattern?: string
+  lastUpdated?: boolean
+  useHeaderImage?: boolean
+  author?: string
+  date?: string
+  headerImage?: string
+  headerMask?: string
+  headerImageCredit?: string
+  headerImageCreditLink?: string
+  catalog?: boolean
+  tags?: string[]
+  hide?: boolean
 }

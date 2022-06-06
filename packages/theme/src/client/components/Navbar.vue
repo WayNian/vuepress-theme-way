@@ -20,12 +20,7 @@ import { useDarkMode, useThemeLocaleData } from '../composables'
 const isDarkMode = useDarkMode()
 const themeLocale = useThemeLocaleData()
 
-console.log(
-  '🚀 ~ file: Navbar.vue ~ line 19 ~ siteLocale',
-  themeLocale.value.navbar
-)
-
-const changeMode = () => {
+const changeMode = (): void => {
   isDarkMode.value = !isDarkMode.value
 }
 

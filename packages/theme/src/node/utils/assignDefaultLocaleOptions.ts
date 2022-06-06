@@ -1,9 +1,6 @@
-import type {
-  DefaultThemeLocaleData,
-  DefaultThemeLocaleOptions,
-} from '../../shared'
+import type { WayThemeLocaleData, WayThemeLocaleOptions } from '../../shared'
 
-export const DEFAULT_LOCALE_OPTIONS: DefaultThemeLocaleOptions = {
+export const DEFAULT_LOCALE_OPTIONS: WayThemeLocaleOptions = {
   // navbar
   navbar: [],
   logo: null,
@@ -39,7 +36,7 @@ export const DEFAULT_LOCALE_OPTIONS: DefaultThemeLocaleOptions = {
   toggleSidebar: 'toggle sidebar',
 }
 
-export const DEFAULT_LOCALE_DATA: DefaultThemeLocaleData = {
+export const DEFAULT_LOCALE_DATA: WayThemeLocaleData = {
   // navbar
   selectLanguageName: '简体中文',
 }
@@ -48,7 +45,7 @@ export const DEFAULT_LOCALE_DATA: DefaultThemeLocaleData = {
  * Assign default options
  */
 export const assignDefaultLocaleOptions = (
-  localeOptions: DefaultThemeLocaleOptions
+  localeOptions: WayThemeLocaleOptions
 ): void => {
   if (!localeOptions.locales) {
     localeOptions.locales = {}

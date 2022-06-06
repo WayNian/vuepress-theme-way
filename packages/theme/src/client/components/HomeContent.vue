@@ -1,10 +1,7 @@
 <template>
   <div class="home-content">
-    <div class="home-content-left">
-      <PersonView></PersonView>
-    </div>
     <main class="home-content-main">主体</main>
-    <div class="home-content-right">右边</div>
+    <div class="home-content-right"><PersonView></PersonView></div>
   </div>
 </template>
 

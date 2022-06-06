@@ -1,13 +1,11 @@
 import type { Theme } from '@vuepress/core'
-import { themeDataPlugin } from '@vuepress/plugin-theme-data'
+// import { themeDataPlugin } from '@vuepress/plugin-theme-data'
 import { fs, path } from '@vuepress/utils'
-import type {
-  DefaultThemeLocaleOptions,
-  DefaultThemePluginsOptions,
-} from '../shared'
+import type { WayThemeLocaleOptions, WayThemePluginsOptions } from '../shared'
+import { getPlugins } from './plugins'
 import { assignDefaultLocaleOptions } from './utils'
-export interface DefaultThemeOptions extends DefaultThemeLocaleOptions {
-  themePlugins?: DefaultThemePluginsOptions
+export interface DefaultThemeOptions extends WayThemeLocaleOptions {
+  themePlugins?: WayThemePluginsOptions
 }
 
 export const wayTheme = ({
@@ -34,9 +32,6 @@ export const wayTheme = ({
         ])
     ),
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
-    plugins: [
-      // @vuepress/plugin-theme-data
-      themeDataPlugin({ themeData: localeOptions }),
-    ],
+    plugins: getPlugins(themePlugins, localeOptions),
   }
 }

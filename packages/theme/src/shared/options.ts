@@ -1,67 +1,77 @@
 import type { ThemeData } from '@vuepress/plugin-theme-data'
 import type { LocaleData } from '@vuepress/shared'
+import type { WayThemeI18n } from './i18n'
 import type { NavbarConfig, SidebarConfig } from './nav'
 
-export interface DefaultThemePluginsOptions {
-  /**
-   * Enable @vuepress/plugin-active-header-links or not
-   */
-  activeHeaderLinks?: boolean
-
-  /**
-   * Enable @vuepress/plugin-back-to-top or not
-   */
-  backToTop?: boolean
-
-  /**
-   * Enable @vuepress/plugin-container or not
-   */
-  container?: {
-    tip?: boolean
-    warning?: boolean
-    danger?: boolean
-    details?: boolean
-    codeGroup?: boolean
-    codeGroupItem?: boolean
-  }
-
-  /**
-   * Enable @vuepress/plugin-external-link-icon or not
-   */
-  externalLinkIcon?: boolean
-
-  /**
-   * Enable @vuepress/plugin-git or not
-   */
-  git?: boolean
-
-  /**
-   * Enable @vuepress/plugin-medium-zoom or not
-   */
-  mediumZoom?: boolean
-
-  /**
-   * Enable @vuepress/plugin-nprogress or not
-   */
-  nprogress?: boolean
-
-  /**
-   * Enable @vuepress/plugin-prismjs or not
-   */
-  prismjs?: boolean
+interface ImageItem {
+  path: string
+  mask?: string
 }
 
-export type DefaultThemeLocaleOptions = DefaultThemeData
+export interface WayThemePageOptions {
+  title?: string
+  subtitle?: string
+  bgImage?: ImageItem
+}
 
-export type DefaultThemeData = ThemeData<DefaultThemeLocaleData>
+export interface WayThemePagesOptions {
+  tags?: WayThemePageOptions
+  links?: WayThemePageOptions
+}
 
-export interface DefaultThemeLocaleData extends LocaleData {
+export type WayThemeLocaleOptions = WayThemeData
+
+export type WayThemeData = ThemeData<WayThemeLocaleData>
+
+export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
   /**
    * Home path of current locale
    *
-   * Used as the link of back-to-home and navbar logo
+   * Used as the link of back-to-home
    */
   home?: string
+
+  /**
+   * Enable hitokoto or not?
+   */
+  hitokoto?: boolean | string
+
+  /**
+   * Icon for search button (should be registered first). "false" for no icon.
+   *
+   * @default "ri-search-2-line"
+   */
+  searchIcon?: string | boolean
+
+  /**
+   * Icon for language seletor (should be registered first). "false" for no icon.
+   *
+   * @default "hi-translate"
+   */
+  langIcon?: string | boolean
+
+  /**
+   * Header images on home page
+   */
+  homeHeaderImages?: null | Array<ImageItem>
+
+  /**
+   * Other pages
+   */
+  pages?: null | WayThemePagesOptions
+
+  /**
+   * Display catalog for all posts or not. Catalog can also be configured
+   * in page frontmatter.
+   */
+  catalog?: boolean
+
+  /**
+   * Maximum number of blogs per page.
+   *
+   * Default: 10
+   */
+  blogNumPerPage?: number
 
   /**
    * Navbar config
@@ -69,64 +79,6 @@ export interface DefaultThemeLocaleData extends LocaleData {
    * Set to `false` to disable navbar in current locale
    */
   navbar?: false | NavbarConfig
-
-  /**
-   * Navbar logo config
-   *
-   * Logo to display in navbar
-   */
-  logo?: null | string
-
-  /**
-   * Navbar logo config for dark mode
-   *
-   * Logo to display in navbar in dark mode
-   */
-  logoDark?: null | string
-
-  /**
-   * Navbar dark mode button config
-   *
-   * Enable dark mode switching and display a button in navbar or not
-   */
-  darkMode?: boolean
-
-  /**
-   * Navbar repository config
-   *
-   * Used for the repository link of navbar
-   */
-  repo?: null | string
-
-  /**
-   * Navbar repository config
-   *
-   * Used for the repository text of navbar
-   */
-  repoLabel?: string
-
-  /**
-   * Navbar language selection config
-   *
-   * Text of the language selection dropdown
-   */
-  selectLanguageText?: string
-
-  /**
-   * Navbar language selection config
-   *
-   * Aria label of of the language selection dropdown
-   */
-  selectLanguageAriaLabel?: string
-
-  /**
-   * Navbar language selection config
-   *
-   * Language name of current locale
-   *
-   * Displayed inside the language selection dropdown
-   */
-  selectLanguageName?: string
 
   /**
    * Sidebar config
@@ -157,13 +109,6 @@ export interface DefaultThemeLocaleData extends LocaleData {
    * Whether to show "Edit this page" or not
    */
   editLink?: boolean
-
-  /**
-   * Page meta - edit link config
-   *
-   * The text to replace the default "Edit this page"
-   */
-  editLinkText?: string
 
   /**
    * Page meta - edit link config
@@ -205,13 +150,6 @@ export interface DefaultThemeLocaleData extends LocaleData {
   lastUpdated?: boolean
 
   /**
-   * Page meta - last updated config
-   *
-   * The text to replace the default "Last Updated"
-   */
-  lastUpdatedText?: string
-
-  /**
    * Page meta - contributors config
    *
    * Whether to show "Contributors" or not
@@ -219,59 +157,7 @@ export interface DefaultThemeLocaleData extends LocaleData {
   contributors?: boolean
 
   /**
-   * Page meta - contributors config
-   *
-   * The text to replace the default "Contributors"
+   * Footer, support HTML
    */
-  contributorsText?: string
-
-  /**
-   * Custom block config
-   *
-   * Default title of TIP custom block
-   */
-  tip?: string
-
-  /**
-   * Custom block config
-   *
-   * Default title of WARNING custom block
-   */
-  warning?: string
-
-  /**
-   * Custom block config
-   *
-   * Default title of DANGER custom block
-   */
-  danger?: string
-
-  /**
-   * 404 page config
-   *
-   * Not Found messages for 404 page
-   */
-  notFound?: string[]
-
-  /**
-   * 404 page config
-   *
-   * Text of back-to-home link in 404 page
-   */
-  backToHome?: string
-
-  /**
-   * A11y text for external link icon
-   */
-  openInNewWindow?: string
-
-  /**
-   * A11y text for dark mode toggle button
-   */
-  toggleDarkMode?: string
-
-  /**
-   * A11y text for sidebar toggle button
-   */
-  toggleSidebar?: string
+  footer?: string
 }

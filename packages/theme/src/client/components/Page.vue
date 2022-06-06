@@ -14,9 +14,16 @@
 // import PageMeta from '@theme/PageMeta.vue'
 // import PageNav from '@theme/PageNav.vue'
 // import { computed } from 'vue'
-import { useDarkMode, useThemeLocaleData } from '../composables'
+import {
+  useDarkMode,
+  useSidebarItems,
+  useThemeLocaleData,
+} from '../composables'
 
 const themeLocale = useThemeLocaleData()
+const sidebarItems = useSidebarItems()
+// const pages = useBlog()
+// console.log('🚀 ~ file: Home.vue ~ line 11 ~ sidebarItems', pages)
 // const { isDarkMode } = useDarkMode()
 
 // const giscusTheme = computed(() =>

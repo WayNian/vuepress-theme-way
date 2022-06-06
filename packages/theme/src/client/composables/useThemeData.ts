@@ -6,9 +6,9 @@ import type {
   ThemeDataRef,
   ThemeLocaleDataRef,
 } from '@vuepress/plugin-theme-data/lib/client'
-import type { DefaultThemeData } from '../../shared'
+import type { WayThemeData } from '../../shared'
 
-export const useThemeData = (): ThemeDataRef<DefaultThemeData> =>
-  _useThemeData<DefaultThemeData>()
-export const useThemeLocaleData = (): ThemeLocaleDataRef<DefaultThemeData> =>
-  _useThemeLocaleData<DefaultThemeData>()
+export const useThemeData = (): ThemeDataRef<WayThemeData> =>
+  _useThemeData<WayThemeData>()
+export const useThemeLocaleData = (): ThemeLocaleDataRef<WayThemeData> =>
+  _useThemeLocaleData<WayThemeData>()

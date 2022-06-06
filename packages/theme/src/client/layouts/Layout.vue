@@ -27,7 +27,7 @@ import Home from '@theme/Home.vue'
 import Navbar from '@theme/Navbar.vue'
 import Page from '@theme/Page.vue'
 import { pageData, usePageFrontmatter } from '@vuepress/client'
-import type { DefaultThemePageFrontmatter } from '../../shared'
-const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
+import type { WayThemePageFrontmatter } from '../../shared'
+const frontmatter = usePageFrontmatter<WayThemePageFrontmatter>()
 console.log('frontmatter', frontmatter.value.home)
 </script>
