@@ -1,4 +1,5 @@
 <template>
+  <div class="bg"></div>
   <div>
     <Navbar></Navbar>
     <Home v-if="frontmatter.home"></Home>

@@ -1,7 +1,11 @@
 <template>
-  <div class="home">这是主页111</div>
+  <div class="home">
+    <HomeContent></HomeContent>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeContent from '@theme/HomeContent.vue'
+</script>
 
 <style scoped></style>

@@ -1,13 +1,10 @@
 @import './variables';
 
 .navbar {
-  --navbar-line-height: calc(
-    var(--navbar-height) - 2 * var(--navbar-padding-v)
-  );
-  height: var(--navbar-height);
-  padding: var(--navbar-padding-v) var(--navbar-padding-h);
-  line-height: var(--navbar-line-height);
   display: flex;
+  height: var(--navbar-height);
+  padding: 0 var(--navbar-padding-v);
+  background-color: var(--c-bg);
 
   .logo {
     height: var(--navbar-height);

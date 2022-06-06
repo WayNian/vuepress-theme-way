@@ -1,0 +1,17 @@
+@import './variables';
+
+.bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(https://pic.imgdb.cn/item/5d776815451253d1783b1764.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.flex {
+  display: flex;
+}
