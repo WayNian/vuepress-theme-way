@@ -25,8 +25,6 @@ const articles = useBlogType('post')
 
 const themeLocale = useThemeLocaleData()
 const sidebarItems = useSidebarItems()
-const pages = useBlog()
-console.log('🚀 ~ file: Home.vue ~ line 11 ~ sidebarItems', articles)
 // const { isDarkMode } = useDarkMode()
 
 // const giscusTheme = computed(() =>
