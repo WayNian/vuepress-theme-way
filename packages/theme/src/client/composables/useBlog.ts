@@ -22,7 +22,6 @@ export const useBlogPages = (): BlogRef => {
 
 export const setupBlogPages = (): void => {
   const blogs = useBlogType<WayThemePostInfo>('post')
-
   provide(blogsSymbol, blogs)
 }
 

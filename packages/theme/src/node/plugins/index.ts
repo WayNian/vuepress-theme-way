@@ -4,7 +4,7 @@ import { palettePlugin } from '@vuepress/plugin-palette'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import { themeDataPlugin } from '@vuepress/plugin-theme-data'
 import type { WayThemeData, WayThemePluginsOptions } from '../../shared'
-// import { getBlogPlugin } from './blog'
+import { getBlogPlugin } from './blog'
 
 export const getPlugins = (
   plugins: WayThemePluginsOptions,
@@ -20,7 +20,7 @@ export const getPlugins = (
     // @vuepress/plugin-theme-data
     themeDataPlugin({ themeData: localeOptions }),
     // vuepress-plugin-blog2
-    // getBlogPlugin(localeOptions, plugins.blog),
+    getBlogPlugin(localeOptions, plugins.blog),
   ]
 
   return pluginConfig

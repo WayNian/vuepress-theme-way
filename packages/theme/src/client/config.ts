@@ -1,6 +1,6 @@
 import { defineClientConfig } from '@vuepress/client'
 import './styles/index.scss'
-import { setupDarkMode, setupSidebarItems } from './composables'
+import { setupBlogPages, setupDarkMode, setupSidebarItems } from './composables'
 import { resolveExtensionPage } from './utils'
 
 export default defineClientConfig({
@@ -10,6 +10,6 @@ export default defineClientConfig({
   setup() {
     setupDarkMode()
     setupSidebarItems()
-    // setupBlogPages()
+    setupBlogPages()
   },
 })

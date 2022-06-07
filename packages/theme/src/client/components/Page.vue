@@ -14,16 +14,19 @@
 // import PageMeta from '@theme/PageMeta.vue'
 // import PageNav from '@theme/PageNav.vue'
 // import { computed } from 'vue'
+import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import {
+  useBlog,
   useDarkMode,
   useSidebarItems,
   useThemeLocaleData,
 } from '../composables'
+const articles = useBlogType('post')
 
 const themeLocale = useThemeLocaleData()
 const sidebarItems = useSidebarItems()
-// const pages = useBlog()
-// console.log('🚀 ~ file: Home.vue ~ line 11 ~ sidebarItems', pages)
+const pages = useBlog()
+console.log('🚀 ~ file: Home.vue ~ line 11 ~ sidebarItems', articles)
 // const { isDarkMode } = useDarkMode()
 
 // const giscusTheme = computed(() =>
