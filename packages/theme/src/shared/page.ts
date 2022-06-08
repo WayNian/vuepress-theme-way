@@ -60,8 +60,3 @@ export interface WayThemePostFrontmatter extends WayThemePageFrontmatter {
   tags?: string[]
   hide?: boolean
 }
-
-export interface IArticleInfo {
-  path: string
-  info: WayThemePostFrontmatter
-}

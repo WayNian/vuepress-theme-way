@@ -1,17 +1,16 @@
 <template>
   <div class="article-item">
-    <span> {{ info.date }} </span>
+    <RouterLink :to="info.path">
+      <span class="article-item-title">{{ info.title }}</span>
+    </RouterLink>
     <div class="article-item-content">
       <img
         src="https://pic.imgdb.cn/item/5d36dae1451253d1789d583d.jpg"
         alt=""
       />
       <div>
-        <RouterLink :to="info.path">
-          <h1>{{ info.title }}</h1>
-        </RouterLink>
-        <!-- <a :href="info.path">{{ info.title }}</a> -->
         <p>{{ info.subtitle }}</p>
+        <span> {{ info.date }} </span>
       </div>
     </div>
   </div>
@@ -20,11 +19,11 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { computed } from 'vue'
-import type { IArticleInfo, WayThemePostFrontmatter } from '../../shared'
+import type { WayThemePostData, WayThemePostFrontmatter } from '../../shared'
 
 const props = defineProps({
   articleInfo: {
-    type: Object as PropType<IArticleInfo>,
+    type: Object as PropType<WayThemePostData>,
     required: true,
   },
 })
