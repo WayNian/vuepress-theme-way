@@ -1,7 +1,11 @@
-import type { Theme } from '@vuepress/core'
+import type { Page, Theme } from '@vuepress/core'
 // import { themeDataPlugin } from '@vuepress/plugin-theme-data'
 import { fs, path } from '@vuepress/utils'
-import type { WayThemeLocaleOptions, WayThemePluginsOptions } from '../shared'
+import type {
+  WayThemeLocaleOptions,
+  WayThemePageData,
+  WayThemePluginsOptions,
+} from '../shared'
 import { getPlugins } from './plugins'
 import { assignDefaultLocaleOptions } from './utils'
 export interface DefaultThemeOptions extends WayThemeLocaleOptions {
@@ -32,6 +36,12 @@ export const wayTheme = ({
         ])
     ),
     clientConfigFile: path.resolve(__dirname, '../client/config.js'),
+    extendsPage: (page: Page<Partial<WayThemePageData>>) => {
+      // save relative file path into page data to generate edit link
+      page.data.filePathRelative = page.filePathRelative
+      // save title into route meta to generate navbar and sidebar
+      page.routeMeta.title = page.title
+    },
     plugins: getPlugins(themePlugins, localeOptions),
   }
 }

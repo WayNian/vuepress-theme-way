@@ -13,6 +13,7 @@ import ArticleItem from '@theme/ArticleItem.vue'
 import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 
 const articles = useBlogType('post')
+console.log('🚀 ~ file: ArticleView.vue ~ line 16 ~ articles', articles)
 </script>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="article-item">
+  <div class="article-item">
     <span> {{ info.date }} </span>
     <div class="article-item-content">
       <img
@@ -7,11 +7,14 @@
         alt=""
       />
       <div>
-        <h1>{{ info.title }}</h1>
+        <RouterLink :to="info.path">
+          <h1>{{ info.title }}</h1>
+        </RouterLink>
+        <!-- <a :href="info.path">{{ info.title }}</a> -->
         <p>{{ info.subtitle }}</p>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -26,7 +29,10 @@ const props = defineProps({
   },
 })
 const info = computed(() => {
-  return props.articleInfo.info
+  return {
+    ...props.articleInfo.info,
+    path: props.articleInfo.path,
+  }
 })
 </script>
 

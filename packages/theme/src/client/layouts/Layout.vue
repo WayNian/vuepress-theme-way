@@ -29,5 +29,4 @@ import Page from '@theme/Page.vue'
 import { pageData, usePageFrontmatter } from '@vuepress/client'
 import type { WayThemePageFrontmatter } from '../../shared'
 const frontmatter = usePageFrontmatter<WayThemePageFrontmatter>()
-console.log('frontmatter', frontmatter.value.home)
 </script>
