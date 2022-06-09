@@ -8,7 +8,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
-import { navbarEn, sidebarEn } from './configs'
+import { navbarEn, personInfo, sidebarEn } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -71,6 +71,7 @@ export default defineUserConfig({
         editLinkText: 'Edit this page on GitHub',
       },
     },
+    personInfo,
   }),
 
   // configure markdown

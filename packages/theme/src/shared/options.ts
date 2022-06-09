@@ -1,5 +1,6 @@
 import type { ThemeData } from '@vuepress/plugin-theme-data'
 import type { LocaleData } from '@vuepress/shared'
+import type { PersonInfo } from './about'
 import type { WayThemeI18n } from './i18n'
 import type { NavbarConfig, SidebarConfig } from './nav'
 
@@ -22,7 +23,6 @@ export interface WayThemePagesOptions {
 export type WayThemeLocaleOptions = WayThemeData
 
 export type WayThemeData = ThemeData<WayThemeLocaleData>
-
 export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
   /**
    * Home path of current locale
@@ -160,4 +160,6 @@ export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
    * Footer, support HTML
    */
   footer?: string
+
+  personInfo?: PersonInfo
 }

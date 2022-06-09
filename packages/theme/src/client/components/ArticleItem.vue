@@ -3,15 +3,16 @@
     <RouterLink :to="info.path">
       <span class="article-item-title">{{ info.title }}</span>
     </RouterLink>
+    <!-- <div style="width: 100%; height: 2px; background-color: aqua"></div> -->
     <div class="article-item-content">
       <img
         src="https://pic.imgdb.cn/item/5d36dae1451253d1789d583d.jpg"
         alt=""
       />
-      <div>
-        <p>{{ info.subtitle }}</p>
-        <span> {{ info.date }} </span>
-      </div>
+      <div>{{ info.subtitle }}</div>
+    </div>
+    <div>
+      <span> {{ info.date }} </span>
     </div>
   </div>
 </template>

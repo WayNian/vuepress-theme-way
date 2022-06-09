@@ -1,17 +1,24 @@
 <template>
   <div class="person-view">
     <div class="flex">
-      <img
-        class="person-image"
-        src="https://pic.imgdb.cn/item/5d89c82d451253d1784eeb51.png"
-        alt=""
-      />
-      <span class="person-name">waynian</span>
+      <img class="person-image" :src="personInfo.avatar" alt="" />
+      <span class="person-name">{{ personInfo.name }}</span>
     </div>
-    <p class="pserson-desc">雅俗共赏</p>
+    <div class="person-description">
+      {{ personInfo.description }}
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { computed } from 'vue'
+import type { PersonInfo } from '../../shared'
+import { useThemeLocaleData } from '../composables'
+const themeLocale = useThemeLocaleData()
+
+const personInfo = computed(() => {
+  return themeLocale.value.personInfo as PersonInfo
+})
+</script>
 
 <style scoped></style>
