@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="article-list">
     <ArticleItem
       v-for="item in articles.items"
       :key="item.path"
