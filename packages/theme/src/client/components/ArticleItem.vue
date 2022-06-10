@@ -3,24 +3,24 @@
     <div class="article-item-container">
       <!-- <div style="width: 100%; height: 2px; background-color: aqua"></div> -->
       <div
-        class="article-item-bg"
+        class="article-item-cover"
         :style="{
           backgroundImage: `url(https://pic.imgdb.cn/item/5d36dae1451253d1789d583d.jpg)`,
         }"
-      >
-        <!-- <img
-          src="https://pic.imgdb.cn/item/5d36dae1451253d1789d583d.jpg"
-          alt=""
-        /> -->
-        <div>{{ info.subtitle }}</div>
+      ></div>
+      <div class="article-item-description">
+        {{ info.subtitle }} Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Voluptas, quasi beatae? Aliquam quae, vitae ratione repudiandae ut
+        animi optio. Perferendis nisi voluptatum, sapiente quaerat iure officiis
+        et optio voluptatibus tenetur.
       </div>
-      <div>
+      <div class="article-item-block-right"></div>
+      <div class="article-item-block-left"></div>
+      <div class="article-item-info">
         <RouterLink :to="info.path">
           <span class="article-item-title">{{ info.title }}</span>
         </RouterLink>
-        <div>
-          <span> {{ info.date }} </span>
-        </div>
+        <p>{{ info.date }}</p>
       </div>
     </div>
   </div>
