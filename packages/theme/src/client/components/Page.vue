@@ -2,6 +2,7 @@
   <main class="page">
     <slot name="top" />
     <div class="theme-way-content">
+      <h1>{{ frontmatter.title }}</h1>
       <slot name="content-top" />
       <Content />
       <slot name="content-bottom" />
@@ -14,17 +15,18 @@
 // import PageMeta from '@theme/PageMeta.vue'
 // import PageNav from '@theme/PageNav.vue'
 // import { computed } from 'vue'
+import { pageData, usePageFrontmatter } from '@vuepress/client'
 import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
+import type { WayThemePostFrontmatter } from '../../shared'
 import {
   useBlog,
   useDarkMode,
   useSidebarItems,
   useThemeLocaleData,
 } from '../composables'
-const articles = useBlogType('post')
+const frontmatter = usePageFrontmatter<WayThemePostFrontmatter>()
 
 const themeLocale = useThemeLocaleData()
-const sidebarItems = useSidebarItems()
 // const { isDarkMode } = useDarkMode()
 
 // const giscusTheme = computed(() =>

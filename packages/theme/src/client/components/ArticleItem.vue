@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { computed } from 'vue'
-import type { WayThemePostData, WayThemePostFrontmatter } from '../../shared'
+import type { WayThemePostData } from '../../shared'
 
 const props = defineProps({
   articleInfo: {
@@ -40,9 +40,11 @@ const props = defineProps({
     required: true,
   },
 })
+
 const info = computed(() => {
   return {
     ...props.articleInfo.info,
+    date: new Date(props.articleInfo.info.date as string).toLocaleString(),
     path: props.articleInfo.path,
   }
 })

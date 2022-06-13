@@ -1,21 +1,14 @@
 @import './variables';
 
-.bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url(https://pic.imgdb.cn/item/5d776815451253d1783b1764.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.flex {
-  display: flex;
-}
-
-html.dark .bg {
-  filter: brightness(0.4);
+.page {
+  padding: 0 2rem;
+  .theme-way-content {
+    margin: 0 auto;
+    max-width: var(--homepage-width);
+    margin-top: 2rem;
+    padding: var(--navbar-padding-h) var(--navbar-padding-v);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    background-color: var(--c-bg);
+  }
 }
