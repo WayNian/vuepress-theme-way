@@ -2,9 +2,14 @@
   <main class="page">
     <slot name="top" />
     <div class="theme-way-content">
-      <h1>{{ frontmatter.title }}</h1>
+      <div class="content-top">
+        <span class="content-title">{{ frontmatter.title }}</span>
+      </div>
+
       <slot name="content-top" />
-      <Content />
+      <article class="content">
+        <Content />
+      </article>
       <slot name="content-bottom" />
     </div>
     <slot name="bottom" />

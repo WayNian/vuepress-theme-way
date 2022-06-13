@@ -1,14 +1,31 @@
 @import './variables';
 
 .page {
-  padding: 0 2rem;
+  margin: 2rem 0;
   .theme-way-content {
     margin: 0 auto;
     max-width: var(--homepage-width);
-    margin-top: 2rem;
-    padding: var(--navbar-padding-h) var(--navbar-padding-v);
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
     background-color: var(--c-bg);
+    overflow: hidden;
+  }
+  .content-top {
+    width: 100%;
+    height: 21.25rem /* 340/16 */;
+    background-image: url(https://pic.imgdb.cn/item/5d776c5c451253d1783b9e9b.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: var(--navbar-padding-h) var(--navbar-padding-v);
+    filter: var(--brightness);
+    .content-title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--c-text-normal);
+      text-shadow: 5px 5px #558abb;
+    }
+  }
+  .content {
+    padding: var(--navbar-padding-h);
   }
 }
