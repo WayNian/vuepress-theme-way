@@ -18,6 +18,7 @@
   --c-text-lighter: #4e6e8e;
   --c-text-lightest: #6a8bad;
   --c-text-quote: #999999;
+  --c-text-normal: #eaeff5;
 
   // border colors
   --c-border: #eaecef;
@@ -49,6 +50,8 @@
   // transition vars
   --t-color: 0.3s ease;
   --t-transform: 0.3s ease;
+
+  --brightness: brightness(0.8);
 
   // code blocks vars
   --code-bg-color: #282c34;

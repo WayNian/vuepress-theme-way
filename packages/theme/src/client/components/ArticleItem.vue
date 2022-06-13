@@ -5,15 +5,18 @@
       <div
         class="article-item-cover"
         :style="{
-          backgroundImage: `url(https://pic.imgdb.cn/item/5d36dae1451253d1789d583d.jpg)`,
+          backgroundImage: `url(https://b3logfile.com/bing/20210102.jpg?imageView2/2/w/1280/format/jpg/interlace/1/q/100)`,
         }"
       ></div>
-      <div class="article-item-description">
-        {{ info.subtitle }} Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Voluptas, quasi beatae? Aliquam quae, vitae ratione repudiandae ut
-        animi optio. Perferendis nisi voluptatum, sapiente quaerat iure officiis
-        et optio voluptatibus tenetur.
+      <div class="article-item-cover-mask">
+        <div class="article-item-description">
+          {{ info.subtitle }} Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Voluptas, quasi beatae? Aliquam quae, vitae ratione
+          repudiandae ut animi optio. Perferendis nisi voluptatum, sapiente
+          quaerat iure officiis et optio voluptatibus tenetur.
+        </div>
       </div>
+
       <div class="article-item-block-right"></div>
       <div class="article-item-block-left"></div>
       <div class="article-item-info">
