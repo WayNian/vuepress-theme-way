@@ -1,6 +1,8 @@
 <template>
   <ul class="tag-list">
-    <li v-for="item in props.tags" :key="item" class="tag-item">{{ item }}</li>
+    <li v-for="item in props.tags" :key="item" class="tag-item">
+      <RouterLink :to="`/tags/${item}`"> {{ item }} </RouterLink>
+    </li>
   </ul>
 </template>
 

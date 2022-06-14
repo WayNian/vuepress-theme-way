@@ -5,6 +5,12 @@
 }
 .tag-item {
   padding: 0.1875rem /* 3/16 */ 0.375rem /* 6/16 */;
-  background-color: rgb(90, 195, 251);
+  border: 1px solid var(--c-text-white);
   line-height: 1;
+  border-radius: var(--border-radius);
+  margin: 0 0.625rem 0.625rem 0;
+  cursor: pointer;
+  a {
+    color: var(--c-text-white);
+  }
 }

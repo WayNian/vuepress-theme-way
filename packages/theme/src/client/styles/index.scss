@@ -1,9 +1,10 @@
-@use './mode/dark.scss';
-@use './mode/light.scss';
+@use 'mode/dark';
+@use 'mode/light';
 
-@use './normalize.scss';
-@use './page.scss';
-@use './nav.scss';
-@use './home.scss';
-@use './article.scss';
-@use './tags.scss';
+@use 'normalize';
+@use 'page';
+@use 'nav';
+@use 'home';
+@use 'article';
+@use 'tags';
+@use 'transitions';

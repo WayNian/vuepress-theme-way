@@ -9,7 +9,9 @@
         />
         <div class="content-top-info">
           <div class="content-title">{{ info.title }}</div>
-          <div>{{ info.date }}</div>
+          <div>
+            <span>{{ info.date }}</span> <span>大概需要2min读完</span>
+          </div>
           <TagList :tags="info.tags"></TagList>
         </div>
       </div>
@@ -25,28 +27,12 @@
 </template>
 
 <script setup lang="ts">
-// import PageMeta from '@theme/PageMeta.vue'
 import TagList from '@theme/TagList.vue'
-import { pageData, usePageFrontmatter } from '@vuepress/client'
+import { usePageFrontmatter } from '@vuepress/client'
 import { computed } from 'vue'
-import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import type { WayThemePostFrontmatter } from '../../shared'
-import {
-  useBlog,
-  useDarkMode,
-  useSidebarItems,
-  useThemeLocaleData,
-} from '../composables'
+import { useThemeLocaleData } from '../composables'
 const frontmatter = usePageFrontmatter<WayThemePostFrontmatter>()
-
-const themeLocale = useThemeLocaleData()
-// const { isDarkMode } = useDarkMode()
-
-// const giscusTheme = computed(() =>
-//   isDarkMode.value
-//     ? themeLocale.value.giscusDarkTheme
-//     : themeLocale.value.giscusLightTheme
-// )
 
 const info = computed(() => {
   return {
