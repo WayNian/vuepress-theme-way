@@ -54,6 +54,21 @@ export const getBlogPlugin = (
       headerImage: frontmatter.headerImage,
       excerpt,
     }),
+    category: [
+      {
+        key: 'tag',
+        getter: ({ frontmatter }: { frontmatter: WayThemePostFrontmatter }) =>
+          frontmatter.tags || [],
+        path: '/tags/',
+        layout: 'Tags',
+        itemPath: '/tags/:name/',
+        itemLayout: 'Tags',
+        frontmatter: () => ({ title: 'Tags' }),
+        itemFrontmatter: (name) => ({
+          title: `Tag ${name}`,
+        }),
+      },
+    ],
     type: [
       {
         key: 'post',
