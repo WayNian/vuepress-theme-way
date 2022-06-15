@@ -1,5 +1,6 @@
 <template>
   <Card class="person-view">
+    <div class="person-view-bg"></div>
     <div class="person-info">
       <img class="person-image" :src="personInfo.avatar" alt="" />
       <span class="person-name">{{ personInfo.name }}</span>

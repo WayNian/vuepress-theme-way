@@ -3,35 +3,48 @@
 .theme-way-layout {
   width: var(--homepage-width);
   max-width: 100%;
+  height: 200vh;
   margin: 0 auto;
   display: flex;
   margin-top: 1.25rem /* 20/16 */;
   .left-view {
-    width: 20%;
+    width: var(--aside-width);
+    min-width: var(--aside-min-width);
+    height: min-content;
+    position: sticky;
+    top: 0.5rem /* 8/16 */;
   }
   .main-view {
-    width: 80%;
+    flex: 1;
     padding: 0 0.5rem /* 8/16 */;
   }
   .main-layout {
     width: 100%;
   }
   .right-view {
-    width: 20%;
+    width: var(--aside-width);
+    min-width: var(--aside-min-width);
   }
   .person-view {
-    position: sticky;
-    top: 0.5rem /* 8/16 */;
+    position: relative;
     width: 100%;
     height: 11.75rem /* 188/16 */;
     background-color: var(--c-bg);
-    border-radius: var(--border-radius);
-    background-image: url(https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    .person-view-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4rem /* 64/16 */;
+      border-radius: var(--border-radius);
+      background-image: url(https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
     .person-info {
+      position: absolute;
       display: flex;
-      margin-top: 1.25rem /* 20/16 */;
+      margin-top: 30px;
       align-items: center;
     }
     .person-image {
