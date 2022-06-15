@@ -52,7 +52,7 @@
   --t-color: 0.3s ease;
   --t-transform: 0.3s ease;
 
-  --brightness: brightness(0.8);
+  --brightness: brightness(1);
   --card-shadow: 0 1px 3px rgb(26 26 26 / 10%);
 
   // code blocks vars
@@ -81,16 +81,16 @@
   --border-radius: 0.25rem;
 }
 
-.bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--c-bg-lighter);
-  z-index: -1;
-  transition: background-color var(--t-color);
-}
+// .bg {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: var(--c-bg-lighter);
+//   z-index: -1;
+//   transition: background-color var(--t-color);
+// }
 
 .flex {
   display: flex;

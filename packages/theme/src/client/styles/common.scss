@@ -40,6 +40,7 @@
       background-image: url(https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+      filter: var(--brightness);
     }
     .person-info {
       position: absolute;

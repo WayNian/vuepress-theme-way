@@ -7,7 +7,6 @@
     </aside>
     <main class="main-view">
       <div class="main-layout">
-        5615615
         <slot></slot>
       </div>
     </main>

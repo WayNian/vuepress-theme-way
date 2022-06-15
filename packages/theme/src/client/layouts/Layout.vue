@@ -1,7 +1,6 @@
 <template>
   <Common>
-    515615
-    <!-- <Home v-if="frontmatter.home"></Home>
+    <Home v-if="frontmatter.home"></Home>
     <Transition v-else name="fade-slide-y" mode="out-in">
       <Page :key="pageData.path">
         <template #top>
@@ -17,7 +16,7 @@
           <slot name="page-bottom" />
         </template>
       </Page>
-    </Transition> -->
+    </Transition>
   </Common>
 </template>
 

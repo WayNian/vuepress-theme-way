@@ -1,7 +1,6 @@
 @import './variables';
 
 .page {
-  margin: 2rem 1rem;
   .theme-way-content {
     margin: 0 auto;
     max-width: var(--homepage-width);
@@ -9,6 +8,7 @@
     box-shadow: var(--card-shadow);
     background-color: var(--c-bg);
     overflow: hidden;
+    transition: background-color var(--t-color);
   }
   .content-top {
     display: flex;
