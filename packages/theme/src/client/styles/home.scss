@@ -18,34 +18,6 @@
     margin-left: 0.7rem;
     border-radius: var(--border-radius);
   }
-  .person-view {
-    position: sticky;
-    top: 0.5rem /* 8/16 */;
-    width: 100%;
-    height: 11.875rem /* 190/16 */;
-    background-color: var(--c-bg);
-    border-radius: var(--border-radius);
-    background-image: url(https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    padding-top: 4rem;
-    .person-image {
-      width: 3.5625rem /* 57/16 */;
-      height: 3.5625rem;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-left: 1rem;
-    }
-    .person-name {
-      padding-top: 1.25rem /* 20/16 */;
-      margin-left: 0.625rem /* 10/16 */;
-    }
-    .person-description {
-      padding: 0.3125rem /* 5/16 */ 0.625rem /* 10/16 */;
-      font-size: 0.875rem;
-      color: var(--secondary-color);
-    }
-  }
 }
 
 @media screen and (max-width: $MQNarrow) {

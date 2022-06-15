@@ -53,7 +53,7 @@
   --t-transform: 0.3s ease;
 
   --brightness: brightness(0.8);
-  --card-shadow: 0 1px 4px rgb(0 0 0 / 4%);
+  --card-shadow: 0 1px 3px rgb(26 26 26 / 10%);
 
   // code blocks vars
   --code-bg-color: #282c34;
@@ -73,7 +73,7 @@
   --sidebar-width: 20rem;
   --sidebar-width-mobile: calc(var(--sidebar-width) * 0.82);
   --content-width: 740px;
-  --homepage-width: 960px;
+  --homepage-width: 1280px;
 
   --border-radius: 0.25rem;
 }
@@ -86,6 +86,7 @@
   height: 100vh;
   background-color: var(--c-bg-lighter);
   z-index: -1;
+  transition: background-color var(--t-color);
 }
 
 .flex {
