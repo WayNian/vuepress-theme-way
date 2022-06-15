@@ -3,6 +3,7 @@
   <div class="theme-way-layout">
     <aside class="left-view">
       <PersonView></PersonView>
+      <PersonLink></PersonLink>
     </aside>
     <main class="main-view">
       <div class="main-layout">
@@ -16,6 +17,7 @@
 
 <script setup lang="ts">
 import Navbar from '@theme/Navbar.vue'
+import PersonLink from '@theme/PersonLink.vue'
 import PersonView from '@theme/PersonView.vue'
 </script>
 
