@@ -31,7 +31,7 @@ body {
 }
 a {
   font-weight: 500;
-  color: var(--c-text-accent);
+  color: var(--c-text);
   text-decoration: none;
   overflow-wrap: break-word;
   cursor: pointer;
@@ -39,7 +39,7 @@ a {
 
 p a code {
   font-weight: 400;
-  color: var(--c-text-accent);
+  color: var(--c-text);
 }
 
 kbd {

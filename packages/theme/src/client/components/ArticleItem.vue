@@ -10,22 +10,16 @@
     <div class="article-item-tags">
       <span class="pointer">#前端</span>
     </div>
-    <div
-      class="article-item-cover"
-      :style="{
-        backgroundImage: `url(https://b3logfile.com/bing/20210102.jpg?imageView2/2/w/1280/format/jpg/interlace/1/q/100)`,
-      }"
-    ></div>
-    <div class="article-item-description">
-      {{ info.subtitle }} Lorem ipsum dolor sit, amet consectetur adipisicing
-      elit. Voluptas, quasi beatae? Aliquam quae, vitae ratione repudiandae ut
-      animi optio. Perferendis nisi voluptatum, sapiente quaerat iure officiis
-      et optio voluptatibus tenetur.
-    </div>
-
     <div class="article-item-info">
-      <RouterLink :to="info.path">
-        <span class="article-item-title">{{ info.title }}</span>
+      <div
+        class="article-item-cover"
+        :style="{
+          backgroundImage: `url(https://b3logfile.com/bing/20210102.jpg?imageView2/2/w/1280/format/jpg/interlace/1/q/100)`,
+        }"
+      ></div>
+      <RouterLink :to="info.path" class="article-item-text">
+        <h3 class="article-item-title">{{ info.title }}</h3>
+        <p class="article-item-description">这是个测试 {{ info.subtitle }}</p>
       </RouterLink>
     </div>
   </Card>
