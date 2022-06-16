@@ -38,6 +38,7 @@
     transition: transform 0.5s linear, filter 0.3s linear;
     background-position: 50% 50%;
     background-size: cover;
+    filter: var(--brightness);
     overflow: hidden;
   }
   .article-item-text {
