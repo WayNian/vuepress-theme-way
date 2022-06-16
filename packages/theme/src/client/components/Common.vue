@@ -10,7 +10,9 @@
         <slot></slot>
       </div>
     </main>
-    <aside class="right-view">gwagwag</aside>
+    <aside class="right-view">
+      <SitePoem></SitePoem>
+    </aside>
   </div>
 </template>
 
@@ -18,6 +20,7 @@
 import Navbar from '@theme/Navbar.vue'
 import PersonLink from '@theme/PersonLink.vue'
 import PersonView from '@theme/PersonView.vue'
+import SitePoem from '@theme/SitePoem.vue'
 </script>
 
 <style scoped></style>
