@@ -20,9 +20,11 @@
   --c-text-quote: #999999;
   --c-text-normal: #eaeff5;
   --c-text-white: #ffffff;
+  --c-text-author: #fb7299;
+  --c-text-link: #178bcf;
 
   // border colors
-  --c-border: #eaecef;
+  --c-border: #e5e9ef;
   --c-border-dark: #dfe2e5;
 
   // custom container colors
@@ -94,6 +96,18 @@
 
 .flex {
   display: flex;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+.ml-20 {
+  margin-left: 1.25rem /* 20/16 */;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 // plugin-back-to-top
