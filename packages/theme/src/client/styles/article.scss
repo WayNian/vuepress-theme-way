@@ -20,14 +20,14 @@
     margin-top: 0.3125rem /* 5/16 */;
     color: var(--c-text-gray);
   }
-  .article-item-tags {
+  .article-item-tags a {
     font-size: 0.875rem /* 14/16 */;
     color: var(--c-text-link);
     margin-left: 0.3125rem /* 5/16 */;
-    margin-bottom: 0.625rem /* 10/16 */;
   }
   .article-item-info {
     height: 15rem /* 240/16 */;
+    margin-top: 0.625rem /* 10/16 */;
     border: 1px solid var(--c-border-dark);
     border-radius: var(--border-radius);
     overflow: hidden;

@@ -8,7 +8,14 @@
       </div>
     </div>
     <div class="article-item-tags">
-      <span class="pointer">#前端</span>
+      <RouterLink
+        v-for="item in info.tags"
+        :key="item"
+        class="pointer"
+        :to="`/tags/${item}`"
+      >
+        #{{ item }}#</RouterLink
+      >
     </div>
     <div class="article-item-info">
       <div
