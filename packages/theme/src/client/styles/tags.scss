@@ -15,6 +15,7 @@
   cursor: pointer;
   transition: border var(--t-color);
   a {
-    color: var(--c-text-white);
+    color: var(--c-text);
+    font-weight: 400;
   }
 }

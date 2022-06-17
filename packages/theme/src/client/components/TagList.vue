@@ -2,7 +2,9 @@
   <Card>
     <ul class="tag-list">
       <li v-for="item in tags" :key="item.name" class="tag-item">
-        {{ item.name }} * {{ item.pages.length }}
+        <RouterLink :to="`/tags/${item.name}`">
+          {{ item.name }} * {{ item.pages.length }}</RouterLink
+        >
       </li>
     </ul>
   </Card>

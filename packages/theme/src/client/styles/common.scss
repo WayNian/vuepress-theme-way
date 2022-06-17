@@ -7,6 +7,7 @@
   margin: 0 auto;
   display: flex;
   margin-top: 1rem;
+  padding: 0 1rem;
   .left-view {
     width: var(--aside-width);
     min-width: var(--aside-min-width);
@@ -67,4 +68,14 @@
   box-shadow: 1px 1px 1px rgb(0 0 0 / 10%), 1px 1px 1px rgb(0 0 0 / 10%),
     1px 1px 1px rgb(0 0 0 / 10%);
   filter: var(--brightness);
+}
+
+@media (max-width: $MQNarrow) {
+  .theme-way-layout {
+    padding: 0;
+  }
+  .left-view,
+  .right-view {
+    display: none;
+  }
 }
