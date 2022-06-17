@@ -2,14 +2,18 @@
 
 .tag-list {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 .tag-item {
+  font-size: 12px;
   padding: 0.1875rem /* 3/16 */ 0.375rem /* 6/16 */;
-  border: 1px solid var(--c-text-white);
+  border: 1px solid var(--c-border-light);
   line-height: 1;
   border-radius: var(--border-radius);
   margin: 0 0.625rem 0.625rem 0;
   cursor: pointer;
+  transition: border var(--t-color);
   a {
     color: var(--c-text-white);
   }

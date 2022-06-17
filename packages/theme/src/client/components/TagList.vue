@@ -1,18 +1,17 @@
 <template>
-  <ul class="tag-list">
-    <li v-for="item in props.tags" :key="item" class="tag-item">
-      <RouterLink :to="`/tags/${item}`"> {{ item }} </RouterLink>
-    </li>
-  </ul>
+  <Card>
+    <ul class="tag-list">
+      <li v-for="item in tags" :key="item.name" class="tag-item">
+        {{ item.name }} * {{ item.pages.length }}
+      </li>
+    </ul>
+  </Card>
 </template>
 
 <script setup lang="ts">
-const props =  defineProps({
-  tags: {
-    type: Array<string>,
-    required: true,
-  },
-})
+import Card from '@theme/Card.vue'
+import { useTags } from '../composables/useTag'
+const tags = useTags()
 </script>
 
-<style scoped></style>
+<style lang="scss"></style>
