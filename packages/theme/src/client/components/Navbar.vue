@@ -10,7 +10,9 @@
         </RouterLink>
 
         <ul class="navbar-menu">
-          <li v-for="item in navLinks" :key="item.text">{{ item.text }}</li>
+          <li v-for="item in navLinks" :key="item.text">
+            <RouterLink :to="item.link">{{ item.text }}</RouterLink>
+          </li>
         </ul>
       </div>
 
