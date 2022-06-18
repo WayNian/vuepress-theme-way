@@ -2,6 +2,7 @@ import type { ThemeData } from '@vuepress/plugin-theme-data'
 import type { LocaleData } from '@vuepress/shared'
 import type { PersonInfo } from './about'
 import type { WayThemeI18n } from './i18n'
+import type { LinkGroup } from './links'
 import type { NavbarConfig, SidebarConfig } from './nav'
 
 interface ImageItem {
@@ -162,4 +163,6 @@ export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
   footer?: string
 
   personInfo?: PersonInfo
+
+  links?: LinkGroup[]
 }

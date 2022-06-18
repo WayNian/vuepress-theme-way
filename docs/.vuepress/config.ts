@@ -9,6 +9,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
 import { navbarZh, personInfo, sidebarEn } from './configs'
+import { linkGroup } from './configs/links'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -71,6 +72,7 @@ export default defineUserConfig({
         editLinkText: 'Edit this page on GitHub',
       },
     },
+    links: linkGroup,
     personInfo,
   }),
 

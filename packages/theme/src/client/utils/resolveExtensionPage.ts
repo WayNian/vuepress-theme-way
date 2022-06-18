@@ -4,6 +4,6 @@ import type { Router } from 'vue-router'
 export const resolveExtensionPage = (router: Router): void => {
   router.addRoute({
     path: '/links',
-    component: () => import('../components/Links.vue'),
+    component: () => import('../layouts/Links.vue'),
   })
 }
