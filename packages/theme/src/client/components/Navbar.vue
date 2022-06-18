@@ -4,8 +4,8 @@
       <div class="flex">
         <RouterLink to="/">
           <div class="logo">
-            <img src="https://pic.imgdb.cn/item/5d804d9d451253d1783c4c25.png" />
-            <span>这是文字</span>
+            <!-- <img src="https://pic.imgdb.cn/item/5d804d9d451253d1783c4c25.png" /> -->
+            <span class="navbar-title">Waynian</span>
           </div>
         </RouterLink>
 

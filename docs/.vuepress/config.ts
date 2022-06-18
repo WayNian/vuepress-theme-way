@@ -8,7 +8,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
-import { navbarEn, personInfo, sidebarEn } from './configs'
+import { navbarZh, personInfo, sidebarEn } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -64,7 +64,7 @@ export default defineUserConfig({
        */
       '/': {
         // navbar
-        navbar: navbarEn,
+        navbar: navbarZh,
         // sidebar
         sidebar: sidebarEn,
         // page meta
