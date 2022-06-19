@@ -4,6 +4,7 @@
   width: 100%;
   height: var(--navbar-height);
   background-color: var(--c-bg);
+  transition: color var(--t-color);
   .navbar-layout {
     max-width: var(--homepage-width);
     margin: 0 auto;

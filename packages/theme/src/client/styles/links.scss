@@ -1,0 +1,70 @@
+@import './variables';
+
+.link {
+  .link-item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+  }
+  .link-title {
+    margin: 0 0 0.625rem /* 10/16 */ 0;
+  }
+  .link-item-card {
+    position: relative;
+    height: 8.125rem /* 130/16 */;
+  }
+  .link-info {
+    display: flex;
+  }
+  .link-avatar {
+    width: 3.75rem /* 60/16 */;
+    height: 3.75rem /* 60/16 */;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .link-name {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 3.78rem;
+    justify-content: space-between;
+    padding: 0.3125rem /* 5/16 */ 0;
+    button {
+      color: var(--c-button);
+      background-color: var(--c-bg);
+      border: 1px solid var(--c-button-border);
+      border-radius: var(--border-radius);
+      padding: 0.125rem /* 2/16 */ 0.625rem /* 10/16 */;
+      cursor: pointer;
+      transition: all var(--t-transform);
+      a {
+        transition: all var(--t-transform);
+      }
+      &:hover {
+        background-color: var(--c-button-bg);
+        border-color: var(--c-button-bg);
+        a {
+          color: var(--c-text-white);
+        }
+      }
+    }
+  }
+  .divider {
+    position: absolute;
+    top: 5rem /* 80/16 */;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--c-button-border);
+  }
+  .link-description {
+    font-size: 0.875rem /* 14/16 */;
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .link .link-item {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 0.625rem /* 10/16 */;
+  }
+}

@@ -6,6 +6,6 @@ export interface LinkItem {
 }
 
 export interface LinkGroup {
-  name: string
+  title: string
   children: LinkItem[]
 }
