@@ -1,6 +1,6 @@
 <template>
   <Common>
-    <Home v-if="frontmatter.home"></Home>
+    <ArticleView v-if="frontmatter.home"></ArticleView>
     <Transition v-else name="fade-slide-y" mode="out-in">
       <Page :key="pageData.path">
         <template #top>
@@ -21,8 +21,8 @@
 </template>
 
 <script setup lang="ts">
+import ArticleView from '@theme/ArticleView.vue'
 import Common from '@theme/Common.vue'
-import Home from '@theme/Home.vue'
 import Page from '@theme/Page.vue'
 import { pageData, usePageFrontmatter } from '@vuepress/client'
 import type { WayThemePageFrontmatter } from '../../shared'

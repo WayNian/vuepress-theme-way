@@ -15,9 +15,11 @@
       <TagList></TagList>
     </aside>
   </div>
+  <Footer></Footer>
 </template>
 
 <script setup lang="ts">
+import Footer from '@theme/Footer.vue'
 import Navbar from '@theme/Navbar.vue'
 import PersonLink from '@theme/PersonLink.vue'
 import PersonView from '@theme/PersonView.vue'
