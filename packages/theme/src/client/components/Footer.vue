@@ -1,5 +1,8 @@
 <template>
-  <div>这是底部</div>
+  <div class="footer">
+    <p>版权所有 © 2012-2022 Waynian</p>
+    <p>Theme Way By Waynian | All Rights Reserved</p>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
