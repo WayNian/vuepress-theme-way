@@ -2,18 +2,32 @@
   <main class="page">
     <slot name="top" />
     <div class="theme-way-content">
-      <div class="content-top">
-        <div
+      <div
+        class="content-top"
+        :style="{
+          backgroundImage: `url(https://pic.imgdb.cn/item/5d776c5c451253d1783b9e9b.jpg)`,
+        }"
+      >
+        <!-- <div
           class="content-image-mask"
-          src="https://pic.imgdb.cn/item/5d776c5c451253d1783b9e9b.jpg"
-        />
-        <div class="content-top-info">
+          src=""
+        /> -->
+        <!-- <div class="content-top-info">
           <div class="content-title">{{ info.title }}</div>
           <div>
             <span>{{ info.date }}</span> <span>大概需要2min读完</span>
           </div>
-          <TagList :tags="info.tags"></TagList>
-        </div>
+          <div class="content-tags">
+            <RouterLink
+              v-for="item in info.tags"
+              :key="item"
+              class="pointer"
+              :to="`/tags/${item}`"
+            >
+              #{{ item }}#</RouterLink
+            >
+          </div>
+        </div> -->
       </div>
 
       <slot name="content-top" />
