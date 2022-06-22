@@ -29,7 +29,14 @@
           </div>
         </div> -->
       </div>
-
+      <div class="content-author-info">
+        <Avatar :url="personInfo.avatar" :width="48" :height="48" />
+        <div class="flex-v ml-20">
+          <span class="person-name">{{ personInfo.name }}</span>
+          <span class="person-name">{{ info.date }}</span>
+        </div>
+      </div>
+      <h4 class="content-title">{{ info.title }}</h4>
       <slot name="content-top" />
       <article class="content">
         <Content />
@@ -41,12 +48,17 @@
 </template>
 
 <script setup lang="ts">
-import TagList from '@theme/TagList.vue'
+import Avatar from '@theme/Avatar.vue'
 import { usePageFrontmatter } from '@vuepress/client'
 import { computed } from 'vue'
-import type { WayThemePostFrontmatter } from '../../shared'
+import type { PersonInfo, WayThemePostFrontmatter } from '../../shared'
 import { useThemeLocaleData } from '../composables'
 const frontmatter = usePageFrontmatter<WayThemePostFrontmatter>()
+
+const themeLocale = useThemeLocaleData()
+const personInfo = computed(() => {
+  return themeLocale.value.personInfo as PersonInfo
+})
 
 const info = computed(() => {
   return {

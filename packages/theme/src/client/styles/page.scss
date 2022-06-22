@@ -32,20 +32,25 @@
       color: var(--c-text-white);
       z-index: 1;
     }
-    .content-title {
-      position: relative;
-      font-size: 4rem;
-      font-weight: bold;
-      color: var(--c-text-white);
-      // text-shadow: 5px 5px #558abb;
-    }
     .content-tags a {
       font-size: 0.875rem /* 14/16 */;
       color: var(--c-text-white);
     }
   }
+  .content-author-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .content-title {
+    font-size: 1.25rem /* 20/16 */;
+    font-weight: bold;
+    color: var(--c-text);
+    margin: 0;
+    padding: 0 var(--navbar-padding-h);
+  }
   .content {
-    padding: var(--navbar-padding-h);
+    padding: 0 var(--navbar-padding-h);
   }
 }
 

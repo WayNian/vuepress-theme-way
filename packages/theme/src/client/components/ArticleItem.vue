@@ -1,7 +1,7 @@
 <template>
   <Card class="article-item-layout">
     <div class="article-item-top">
-      <Avatar :url="personInfo.avatar" :width="47" :height="47" />
+      <Avatar :url="personInfo.avatar" :width="48" :height="48" />
       <div class="flex-v ml-20">
         <a class="article-item-author">waynian</a>
         <span class="article-item-date">2019-10-10</span>
