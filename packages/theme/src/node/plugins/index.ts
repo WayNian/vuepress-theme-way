@@ -3,6 +3,7 @@ import { nprogressPlugin } from '@vuepress/plugin-nprogress'
 import { palettePlugin } from '@vuepress/plugin-palette'
 import { prismjsPlugin } from '@vuepress/plugin-prismjs'
 import { themeDataPlugin } from '@vuepress/plugin-theme-data'
+import { themeWayWaline } from '@waynian/plugin-way-waline'
 import type { WayThemeData, WayThemePluginsOptions } from '../../shared'
 import { getBlogPlugin } from './blog'
 
@@ -21,6 +22,7 @@ export const getPlugins = (
     themeDataPlugin({ themeData: localeOptions }),
     // vuepress-plugin-blog2
     getBlogPlugin(localeOptions, plugins.blog),
+    themeWayWaline(),
   ]
 
   return pluginConfig

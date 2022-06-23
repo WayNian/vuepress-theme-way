@@ -41,6 +41,7 @@
       <article class="content">
         <Content />
       </article>
+      <CommentService></CommentService>
       <slot name="content-bottom" />
     </div>
     <slot name="bottom" />
