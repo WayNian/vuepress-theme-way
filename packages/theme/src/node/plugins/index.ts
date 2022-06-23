@@ -22,7 +22,9 @@ export const getPlugins = (
     themeDataPlugin({ themeData: localeOptions }),
     // vuepress-plugin-blog2
     getBlogPlugin(localeOptions, plugins.blog),
-    themeWayWaline(),
+    themeWayWaline({
+      theme: 'dark',
+    }),
   ]
 
   return pluginConfig
