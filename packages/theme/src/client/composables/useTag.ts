@@ -31,7 +31,6 @@ export interface TagType {
 
 export const useTags = (): ComputedRef<TagType[]> => {
   const tagMap = useTagMap()
-
   const tags = computed(() => {
     const tags = [] as TagType[]
     for (const tag in tagMap.value.map) {

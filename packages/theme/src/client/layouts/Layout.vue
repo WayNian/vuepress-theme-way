@@ -1,7 +1,7 @@
 <template>
   <Common>
     <ArticleView v-if="frontmatter.home"></ArticleView>
-    <Transition v-else name="fade-slide-y" mode="out-in">
+    <Transition v-if="!frontmatter.home" name="fade-slide-y" mode="out-in">
       <Page :key="pageData.path">
         <template #top>
           <slot name="page-top" />
