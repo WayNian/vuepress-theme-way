@@ -18,6 +18,7 @@ onMounted(() => {
       serverURL,
       dark: 'html.dark',
       comment: true, // 评论数统计
+      pageview: true, // 浏览量统计
     })
 })
 </script>

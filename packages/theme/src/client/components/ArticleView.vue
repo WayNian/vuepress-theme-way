@@ -10,11 +10,20 @@
 
 <script setup lang="ts">
 import ArticleItem from '@theme/ArticleItem.vue'
+import { pageviewCount } from '@waline/client'
+import { onMounted } from 'vue'
 import { useBlogCategory, useBlogType } from 'vuepress-plugin-blog2/lib/client'
+import { useThemeLocaleData } from '../composables'
+const themeLocale = useThemeLocaleData()
 
 const articles = useBlogType('post')
 const tags = useBlogCategory('tag')
-console.log('🚀 ~ file: ArticleView.vue ~ line 17 ~ tags', tags)
+onMounted(() => {
+  pageviewCount({
+    serverURL: themeLocale.value.comments?.serverURL as string,
+    path: window.location.pathname,
+  })
+})
 </script>
 
 <style scoped></style>
