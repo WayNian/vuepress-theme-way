@@ -8,16 +8,20 @@ import type { PropType } from 'vue'
 import { onMounted } from 'vue'
 import '@waline/client/dist/waline.css'
 import type { WalineOptions } from '../../shared/'
+
 const props = defineProps({
   options: {
     type: Object as PropType<WalineOptions>,
     required: true,
   },
 })
+
 onMounted(() => {
   init({
     el: '#waline',
     serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
+    dark: 'html.dark',
+    comment: true, // 评论数统计
   })
 })
 </script>

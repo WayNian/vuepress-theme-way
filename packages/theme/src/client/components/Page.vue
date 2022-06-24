@@ -41,7 +41,7 @@
       <article class="content">
         <Content />
       </article>
-      <CommentService></CommentService>
+      <Comments></Comments>
       <slot name="content-bottom" />
     </div>
     <slot name="bottom" />
@@ -50,6 +50,7 @@
 
 <script setup lang="ts">
 import Avatar from '@theme/Avatar.vue'
+import Comments from '@theme/Comments.vue'
 import { usePageFrontmatter } from '@vuepress/client'
 import { computed } from 'vue'
 import type { PersonInfo, WayThemePostFrontmatter } from '../../shared'

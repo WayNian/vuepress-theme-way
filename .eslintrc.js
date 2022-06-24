@@ -27,6 +27,13 @@ module.exports = {
             order: ['template', 'script', 'style'],
           },
         ],
+        'vue/attribute-hyphenation': [
+          'error',
+          'always',
+          {
+            ignore: ['URL'],
+          },
+        ],
         'vue/multi-word-component-names': 'off',
       },
     },

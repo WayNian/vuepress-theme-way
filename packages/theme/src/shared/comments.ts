@@ -1,3 +1,3 @@
 export interface WalineOptions {
-  theme: 'dark' | 'light'
+  serverURL: string
 }
