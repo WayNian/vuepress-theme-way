@@ -4,25 +4,21 @@
 
 <script setup lang="ts">
 import { init } from '@waline/client'
-import type { PropType } from 'vue'
 import { onMounted } from 'vue'
 import '@waline/client/dist/waline.css'
-import type { WalineOptions } from '../../shared/'
+import { useThemeLocaleData } from '../composables'
 
-const props = defineProps({
-  options: {
-    type: Object as PropType<WalineOptions>,
-    required: true,
-  },
-})
+const themeLocale = useThemeLocaleData()
 
 onMounted(() => {
-  init({
-    el: '#waline',
-    serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
-    dark: 'html.dark',
-    comment: true, // 评论数统计
-  })
+  const serverURL = themeLocale.value.comments?.serverURL as string
+  serverURL &&
+    init({
+      el: '#waline',
+      serverURL,
+      dark: 'html.dark',
+      comment: true, // 评论数统计
+    })
 })
 </script>
 

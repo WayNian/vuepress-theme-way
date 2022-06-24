@@ -74,6 +74,9 @@ export default defineUserConfig({
     },
     links: linkGroup,
     personInfo,
+    comments: {
+      serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
+    },
   }),
 
   // configure markdown
