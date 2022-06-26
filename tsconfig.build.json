@@ -1,8 +1,5 @@
 {
   "extends": "./tsconfig.base.json",
-  "references": [
-    { "path": "./packages/plugins/plugin-back-to-top/tsconfig.build.json" },
-    { "path": "./packages/theme/tsconfig.build.json" }
-  ],
+  "references": [{ "path": "./packages/theme/tsconfig.build.json" }],
   "files": []
 }
