@@ -5,8 +5,7 @@
       <Avatar :url="personInfo.avatar" />
       <span class="person-name">{{ personInfo.name }}</span>
     </div>
-    {{ data }}
-    <!-- <div class="article-data">
+    <div class="article-data">
       <div class="article-data-content">
         <span class="article-data-number">{{ data.commentTotal }}</span
         ><span class="article-data-title">文章</span>
@@ -19,7 +18,7 @@
         <span class="article-data-number">{{ data.counterTotal }}</span
         ><span class="article-data-title">访问</span>
       </div>
-    </div> -->
+    </div>
   </Card>
 </template>
 

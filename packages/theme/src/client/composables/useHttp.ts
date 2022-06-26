@@ -1,4 +1,5 @@
-import { computed, reactive, toRefs } from 'vue'
+import type { InjectionKey } from 'vue'
+import { provide, reactive } from 'vue'
 import type {
   CommentData,
   CommentItem,
@@ -13,7 +14,14 @@ interface ArticleDataRes {
   commentTotal?: number
 }
 
-const articleData = reactive<ArticleDataRes>({})
+const articleData = reactive<ArticleDataRes>({
+  counterList: [],
+  counterTotal: 0,
+  commentList: [],
+  commentTotal: 0,
+})
+
+const articleDataSymbol: InjectionKey<ArticleDataRes> = Symbol('articleData')
 
 // 访问相关
 export const fetchCounter = (): Promise<CounterItem[]> => {
@@ -35,7 +43,7 @@ export const fetchCounter = (): Promise<CounterItem[]> => {
 }
 
 // 评论相关
-const fetchComment = (): Promise<CommentItem[]> => {
+export const fetchComment = (): Promise<CommentItem[]> => {
   return new Promise((resolve, reject) => {
     fetch('https://qsddby5s.api.lncldglobal.com/1.1/classes/Comment', {
       method: 'GET',
@@ -54,26 +62,21 @@ const fetchComment = (): Promise<CommentItem[]> => {
 }
 
 // 获取访问，评论相关数据
-export const useArticleData = () => {
-  computed(() => {
-    console.log('-->>', articleData)
-    return ''
-  })
-  return toRefs(articleData)
+export const useArticleData = (): ArticleDataRes => {
+  return articleData
 }
 
-export const setupArticleData = async (): Promise<void> => {
-  const counterList = await fetchCounter()
-  const commentList = await fetchComment()
-  const counterTotal = counterList.reduce(
-    (preVal, currVal) => preVal + currVal.time,
-    0
-  )
-  const commentTotal = commentList.length
-  articleData.counterList = counterList
-  articleData.commentList = commentList
-  articleData.counterTotal = counterTotal
-  articleData.commentTotal = commentTotal
-
-  console.log('articleData', articleData)
+export const setupArticleData = (): void => {
+  fetchCounter().then((res) => {
+    articleData.counterList = res
+    articleData.counterTotal = res.reduce(
+      (preVal, currVal) => preVal + currVal.time,
+      0
+    )
+  })
+  fetchComment().then((res) => {
+    articleData.commentList = res
+    articleData.commentTotal = res.length
+  })
+  provide(articleDataSymbol, articleData)
 }
