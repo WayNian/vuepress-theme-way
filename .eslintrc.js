@@ -56,9 +56,6 @@ module.exports = {
     },
     {
       files: ['**/__tests__/**/*.ts'],
-      env: {
-        jest: true,
-      },
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
         'vue/one-component-per-file': 'off',
