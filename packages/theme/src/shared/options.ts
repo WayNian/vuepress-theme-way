@@ -5,6 +5,7 @@ import type { WalineOptions } from './comment'
 import type { WayThemeI18n } from './i18n'
 import type { LinkGroup } from './links'
 import type { NavbarConfig, SidebarConfig } from './nav'
+import type { WebLinkItem } from './web-links'
 
 interface ImageItem {
   path: string
@@ -168,4 +169,6 @@ export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
   links?: LinkGroup[]
 
   comments?: WalineOptions
+
+  webLinks?: WebLinkItem[]
 }
