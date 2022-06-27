@@ -76,8 +76,11 @@ export default defineUserConfig({
     links: linkGroup,
     personInfo,
     webLinks,
+    // 评论和统计相关
     comments: {
-      serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
+      'serverURL': 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
+      'APP-ID': 'qSDDby5SpgWVXHs0TmqooRx6-MdYXbMMI',
+      'APP-KEY': 'u9A20eaXONKJb37zjVopq6mV',
     },
   }),
 

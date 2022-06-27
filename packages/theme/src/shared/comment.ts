@@ -1,5 +1,7 @@
 export interface WalineOptions {
-  serverURL: string
+  'serverURL': string
+  'APP-ID': string
+  'APP-KEY': string
 }
 
 export interface CommentItem {

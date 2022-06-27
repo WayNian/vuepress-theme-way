@@ -1,3 +1,4 @@
+import type { ThemeLocaleDataRef } from '@vuepress/plugin-theme-data/lib/client'
 import type { InjectionKey } from 'vue'
 import { provide, reactive } from 'vue'
 import type {
@@ -5,7 +6,9 @@ import type {
   CommentItem,
   CounterData,
   CounterItem,
+  WayThemeData,
 } from '../../shared'
+import { useThemeLocaleData } from './useThemeData'
 
 interface ArticleDataRes {
   counterList?: CounterItem[]
@@ -23,14 +26,16 @@ const articleData = reactive<ArticleDataRes>({
 
 const articleDataSymbol: InjectionKey<ArticleDataRes> = Symbol('articleData')
 
+let themeLocale: ThemeLocaleDataRef<WayThemeData>
+
 // 访问相关
 export const fetchCounter = (): Promise<CounterItem[]> => {
   return new Promise((resolve, reject) => {
     fetch('https://qsddby5s.api.lncldglobal.com/1.1/classes/Counter', {
       method: 'GET',
       headers: {
-        'X-LC-Id': 'qSDDby5SpgWVXHs0TmqooRx6-MdYXbMMI',
-        'X-LC-Key': 'u9A20eaXONKJb37zjVopq6mV',
+        'X-LC-Id': themeLocale.value.comments?.['APP-ID'] as string,
+        'X-LC-Key': themeLocale.value.comments?.['APP-KEY'] as string,
         'Content-Type': 'application/json',
       },
     })
@@ -48,8 +53,8 @@ export const fetchComment = (): Promise<CommentItem[]> => {
     fetch('https://qsddby5s.api.lncldglobal.com/1.1/classes/Comment', {
       method: 'GET',
       headers: {
-        'X-LC-Id': 'qSDDby5SpgWVXHs0TmqooRx6-MdYXbMMI',
-        'X-LC-Key': 'u9A20eaXONKJb37zjVopq6mV',
+        'X-LC-Id': themeLocale.value.comments?.['APP-ID'] as string,
+        'X-LC-Key': themeLocale.value.comments?.['APP-KEY'] as string,
         'Content-Type': 'application/json',
       },
     })
@@ -67,6 +72,9 @@ export const useArticleData = (): ArticleDataRes => {
 }
 
 export const setupArticleData = (): void => {
+  // 先获取APP—ID和APP—KEY
+  themeLocale = useThemeLocaleData()
+
   fetchCounter().then((res) => {
     articleData.counterList = res
     articleData.counterTotal = res.reduce(
