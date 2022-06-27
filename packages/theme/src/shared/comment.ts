@@ -2,6 +2,8 @@ export interface WalineOptions {
   'serverURL': string
   'APP-ID': string
   'APP-KEY': string
+  'counterUrl': string
+  'commentUrl': string
 }
 
 export interface CommentItem {

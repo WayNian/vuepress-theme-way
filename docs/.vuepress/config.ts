@@ -81,6 +81,8 @@ export default defineUserConfig({
       'serverURL': 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
       'APP-ID': 'qSDDby5SpgWVXHs0TmqooRx6-MdYXbMMI',
       'APP-KEY': 'u9A20eaXONKJb37zjVopq6mV',
+      'counterUrl': 'https://qsddby5s.api.lncldglobal.com/1.1/classes/Counter',
+      'commentUrl': 'https://qsddby5s.api.lncldglobal.com/1.1/classes/Comment',
     },
   }),
 

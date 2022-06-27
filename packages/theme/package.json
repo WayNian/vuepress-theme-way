@@ -45,6 +45,7 @@
     "@vuepress/utils": "2.0.0-beta.46",
     "@vueuse/core": "^8.5.0",
     "@waline/client": "^2.6.1",
+    "axios": "^0.27.2",
     "sass": "^1.52.1",
     "vue": "^3.2.36",
     "vue-router": "^4.0.15",

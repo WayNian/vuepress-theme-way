@@ -1,4 +1,5 @@
 import type { ThemeLocaleDataRef } from '@vuepress/plugin-theme-data/lib/client'
+import axios from 'axios'
 import type { InjectionKey } from 'vue'
 import { provide, reactive } from 'vue'
 import type {
@@ -28,41 +29,38 @@ const articleDataSymbol: InjectionKey<ArticleDataRes> = Symbol('articleData')
 
 let themeLocale: ThemeLocaleDataRef<WayThemeData>
 
+let headers = {}
 // 访问相关
 export const fetchCounter = (): Promise<CounterItem[]> => {
   return new Promise((resolve, reject) => {
-    fetch('https://qsddby5s.api.lncldglobal.com/1.1/classes/Counter', {
-      method: 'GET',
-      headers: {
-        'X-LC-Id': themeLocale.value.comments?.['APP-ID'] as string,
-        'X-LC-Key': themeLocale.value.comments?.['APP-KEY'] as string,
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data: CounterData) => {
-        resolve(data.results)
+    if (themeLocale.value.comments?.counterUrl) {
+      axios({
+        method: 'get',
+        url: themeLocale.value.comments.counterUrl,
+        headers,
       })
-      .catch((err) => reject(err))
+        .then(function ({ data }: { data: CounterData }) {
+          resolve(data.results)
+        })
+        .catch((err) => reject(err))
+    }
   })
 }
 
 // 评论相关
 export const fetchComment = (): Promise<CommentItem[]> => {
   return new Promise((resolve, reject) => {
-    fetch('https://qsddby5s.api.lncldglobal.com/1.1/classes/Comment', {
-      method: 'GET',
-      headers: {
-        'X-LC-Id': themeLocale.value.comments?.['APP-ID'] as string,
-        'X-LC-Key': themeLocale.value.comments?.['APP-KEY'] as string,
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data: CommentData) => {
-        resolve(data.results)
+    if (themeLocale.value.comments?.commentUrl) {
+      axios({
+        method: 'get',
+        url: themeLocale.value.comments.commentUrl,
+        headers,
       })
-      .catch((err) => reject(err))
+        .then(function ({ data }: { data: CommentData }) {
+          resolve(data.results)
+        })
+        .catch((err) => reject(err))
+    }
   })
 }
 
@@ -74,6 +72,11 @@ export const useArticleData = (): ArticleDataRes => {
 export const setupArticleData = (): void => {
   // 先获取APP—ID和APP—KEY
   themeLocale = useThemeLocaleData()
+  headers = {
+    'X-LC-Id': themeLocale.value.comments?.['APP-ID'] as string,
+    'X-LC-Key': themeLocale.value.comments?.['APP-KEY'] as string,
+    'Content-Type': 'application/json',
+  }
 
   fetchCounter().then((res) => {
     articleData.counterList = res
