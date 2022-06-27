@@ -1,3 +1,7 @@
+# [2.0.0-beta.4](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2022-06-27)
+
+
+
 # [2.0.0-beta.3](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2022-06-27)
 
 
