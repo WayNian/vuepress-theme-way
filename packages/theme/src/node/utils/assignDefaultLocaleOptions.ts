@@ -4,7 +4,9 @@ export const DEFAULT_LOCALE_OPTIONS: WayThemeLocaleOptions = {
   // navbar
   navbar: [],
   logo: null,
-  darkMode: true,
+  // color mode
+  colorMode: 'auto',
+  colorModeSwitch: true,
   repo: null,
   selectLanguageText: 'Languages',
   selectLanguageAriaLabel: 'Select language',
@@ -32,7 +34,7 @@ export const DEFAULT_LOCALE_OPTIONS: WayThemeLocaleOptions = {
 
   // a11y
   openInNewWindow: 'open in new window',
-  toggleDarkMode: 'toggle dark mode',
+  toggleColorMode: 'toggle dark mode',
   toggleSidebar: 'toggle sidebar',
 }
 

@@ -107,7 +107,7 @@ export interface WayThemeI18n {
   /**
    * A11y text for dark mode toggle button
    */
-  toggleDarkMode?: string
+  toggleColorMode?: string
 
   /**
    * A11y text for sidebar toggle button

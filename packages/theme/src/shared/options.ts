@@ -28,12 +28,44 @@ export type WayThemeLocaleOptions = WayThemeData
 export type WayThemeData = ThemeData<WayThemeLocaleData>
 export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
   /**
+   * Default color mode
+   *
+   * @default 'auto'
+   */
+  colorMode?: 'auto' | 'dark' | 'light'
+
+  /**
+   * Enable color mode switching and display a button in navbar or not
+   *
+   * @default true
+   */
+  colorModeSwitch?: boolean
+  /**
    * Home path of current locale
    *
    * Used as the link of back-to-home
    */
   home?: string
 
+  /**
+   * Navbar logo config
+   *
+   * Logo to display in navbar
+   */
+  logo?: null | string
+  /**
+   * Navbar repository config
+   *
+   * Used for the repository link of navbar
+   */
+  repo?: null | string
+
+  /**
+   * Navbar repository config
+   *
+   * Used for the repository text of navbar
+   */
+  repoLabel?: string
   /**
    * Enable hitokoto or not?
    */

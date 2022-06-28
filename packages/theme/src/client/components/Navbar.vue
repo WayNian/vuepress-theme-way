@@ -24,12 +24,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { NavLink } from '../../shared'
-import { useDarkMode, useThemeLocaleData } from '../composables'
-const isDarkMode = useDarkMode()
+import { useColorMode, useThemeLocaleData } from '../composables'
+const isColorMode = useColorMode()
 const themeLocale = useThemeLocaleData()
 
 const changeMode = (): void => {
-  isDarkMode.value = !isDarkMode.value
+  isColorMode.value = !isColorMode.value
 }
 
 const navLinks = computed(() => {

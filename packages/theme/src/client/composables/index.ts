@@ -1,4 +1,4 @@
-export * from './useDarkMode'
+export * from './useColorMode'
 export * from './useThemeData'
 export * from './useNavLink'
 export * from './useSidebarItems'

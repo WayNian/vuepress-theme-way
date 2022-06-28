@@ -3,31 +3,31 @@ import { computed, inject, onMounted, onUnmounted, provide, watch } from 'vue'
 import type { InjectionKey, WritableComputedRef } from 'vue'
 import { useThemeLocaleData } from '.'
 
-export type DarkModeRef = WritableComputedRef<boolean>
+export type ColorModeRef = WritableComputedRef<boolean>
 
-export const darkModeSymbol: InjectionKey<DarkModeRef> = Symbol(
-  __VUEPRESS_DEV__ ? 'darkMode' : ''
+export const colorModeSymbol: InjectionKey<ColorModeRef> = Symbol(
+  __VUEPRESS_DEV__ ? 'colorMode' : ''
 )
 
-export const useDarkMode = (): DarkModeRef => {
-  const isDarkMode = inject(darkModeSymbol)
-  if (!isDarkMode) {
-    throw new Error('useDarkMode() is called without provider.')
+export const useColorMode = (): ColorModeRef => {
+  const isColorMode = inject(colorModeSymbol)
+  if (!isColorMode) {
+    throw new Error('useColorMode() is called without provider.')
   }
-  return isDarkMode
+  return isColorMode
 }
 
 /**
  * Create dark mode ref and provide as global computed in setup
  */
-export const setupDarkMode = (): void => {
+export const setupColorMode = (): void => {
   const themeLocale = useThemeLocaleData()
   const isDarkPreferred = usePreferredDark()
   const darkStorage = useStorage('vuepress-color-scheme', 'auto')
 
-  const isDarkMode = computed<boolean>({
+  const isColorMode = computed<boolean>({
     get() {
-      if (!themeLocale.value.darkMode) {
+      if (!themeLocale.value.colorMode) {
         return false
       }
       if (darkStorage.value === 'auto') {
@@ -43,18 +43,18 @@ export const setupDarkMode = (): void => {
       }
     },
   })
-  provide(darkModeSymbol, isDarkMode)
-  updateHtmlDarkClass(isDarkMode)
+  provide(colorModeSymbol, isColorMode)
+  updateHtmlDarkClass(isColorMode)
 }
 
-export const updateHtmlDarkClass = (isDarkMode: DarkModeRef): void => {
-  const update = (value = isDarkMode.value): void => {
+export const updateHtmlDarkClass = (isColorMode: ColorModeRef): void => {
+  const update = (value = isColorMode.value): void => {
     const htmlEl = window?.document.querySelector('html')
     htmlEl?.classList.toggle('dark', value)
   }
 
   onMounted(() => {
-    watch(isDarkMode, update, { immediate: true })
+    watch(isColorMode, update, { immediate: true })
   })
 
   onUnmounted(() => update())

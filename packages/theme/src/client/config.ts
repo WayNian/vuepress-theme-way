@@ -3,7 +3,7 @@ import './styles/index.scss'
 import {
   setupArticleData,
   setupBlogPages,
-  setupDarkMode,
+  setupColorMode,
   setupSidebarItems,
 } from './composables'
 import { setupTags } from './composables/useTag'
@@ -14,7 +14,7 @@ export default defineClientConfig({
     resolveExtensionPage(router)
   },
   setup() {
-    setupDarkMode()
+    setupColorMode()
     setupSidebarItems()
     setupBlogPages()
     setupArticleData()
