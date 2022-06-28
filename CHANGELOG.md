@@ -1,3 +1,12 @@
+# [2.0.0-beta.6](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.5...v2.0.0-beta.6) (2022-06-28)
+
+
+### Features
+
+* **theme-way:**  更新darkMode为colorMode ([2b3e473](https://github.com/WayNian/vuepress-theme-way/commit/2b3e4731304cf7e8f4dc05b2b95c4b2775cd032b))
+
+
+
 # [2.0.0-beta.5](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2022-06-27)
 
 
