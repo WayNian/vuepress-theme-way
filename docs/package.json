@@ -17,7 +17,6 @@
     "@vuepress/plugin-google-analytics": "2.0.0-beta.46",
     "@vuepress/plugin-register-components": "2.0.0-beta.46",
     "@vuepress/plugin-shiki": "2.0.0-beta.46",
-    "@vuepress/theme-default": "2.0.0-beta.46",
     "@vuepress/utils": "2.0.0-beta.46",
     "sass-loader": "^13.0.0",
     "serve": "^13.0.2",
