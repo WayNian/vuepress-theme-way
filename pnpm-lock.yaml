@@ -4,30 +4,30 @@ importers:
 
   .:
     specifiers:
-      '@commitlint/cli': ^17.0.1
-      '@commitlint/config-conventional': ^17.0.0
-      '@types/node': ^17.0.35
+      '@commitlint/cli': ^17.0.3
+      '@commitlint/config-conventional': ^17.0.3
+      '@types/node': ^17.0.45
       '@types/webpack-env': ^1.17.0
-      bumpp: ^7.1.1
+      bumpp: ^7.2.0
       conventional-changelog-cli: ^2.2.2
       cpx2: ^4.2.0
-      eslint: ^8.16.0
-      eslint-config-vuepress: ^3.8.0
-      eslint-config-vuepress-typescript: ^2.8.0
+      eslint: ^8.18.0
+      eslint-config-vuepress: ^3.10.0
+      eslint-config-vuepress-typescript: ^2.9.1
       husky: ^8.0.1
-      lint-staged: ^12.4.2
-      prettier: ^2.6.2
+      lint-staged: ^12.5.0
+      prettier: ^2.7.1
       prettier-config-vuepress: ^1.4.0
       rimraf: ^3.0.2
       sort-package-json: ^1.57.0
       tsconfig-vuepress: ^0.2.1
-      tsup: ^6.0.1
-      typescript: ^4.7.2
-      vite: ~2.9.9
+      tsup: ^6.1.2
+      typescript: ^4.7.4
+      vite: ~2.9.13
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
-      '@types/node': 17.0.38
+      '@types/node': 17.0.45
       '@types/webpack-env': 1.17.0
       bumpp: 7.2.0
       conventional-changelog-cli: 2.2.2
@@ -95,7 +95,7 @@ importers:
       axios: ^0.27.2
       sass: ^1.52.1
       vue: ^3.2.36
-      vue-router: ^4.0.15
+      vue-router: ^4.0.16
       vuepress-plugin-blog2: 2.0.0-beta.84
     dependencies:
       '@vuepress/client': 2.0.0-beta.48
@@ -113,7 +113,7 @@ importers:
       axios: 0.27.2
       sass: 1.53.0
       vue: 3.2.37
-      vue-router: 4.0.15_vue@3.2.37
+      vue-router: 4.0.16_vue@3.2.37
       vuepress-plugin-blog2: 2.0.0-beta.84
 
 packages:
@@ -238,7 +238,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-validator-identifier': 7.18.6
-      chalk: 2.4.1
+      chalk: 2.4.2
       js-tokens: 4.0.0
 
   /@babel/parser/7.18.4:
@@ -339,10 +339,10 @@ packages:
       '@commitlint/execute-rule': 17.0.0
       '@commitlint/resolve-extends': 17.0.3
       '@commitlint/types': 17.0.0
-      '@types/node': 17.0.38
+      '@types/node': 17.0.45
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.2_6nq352wiaj44ir2lfenbt2ezwy
+      cosmiconfig-typescript-loader: 2.0.2_x2utdhayajzrh747hktprshhby
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.7.4
@@ -662,7 +662,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 17.0.38
+      '@types/node': 17.0.45
     dev: true
 
   /@types/html-minifier-terser/6.1.0:
@@ -715,6 +715,11 @@ packages:
 
   /@types/node/17.0.38:
     resolution: {integrity: sha512-5jY9RhV7c0Z4Jy09G+NIDTsCZ5G0L5n+Z+p+Y7t5VJHM30bgwzSjVtlcBxqAj+6L/swIlvtOSzr8rBk/aNyV2g==}
+    dev: false
+
+  /@types/node/17.0.45:
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+    dev: true
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1074,7 +1079,7 @@ packages:
       '@vue/devtools-api': 6.1.4
       '@vuepress/shared': 2.0.0-beta.48
       vue: 3.2.37
-      vue-router: 4.0.15_vue@3.2.37
+      vue-router: 4.0.16_vue@3.2.37
     dev: false
 
   /@vuepress/core/2.0.0-beta.48:
@@ -1166,7 +1171,7 @@ packages:
       '@vuepress/core': 2.0.0-beta.48
       '@vuepress/utils': 2.0.0-beta.48
       vue: 3.2.37
-      vue-router: 4.0.15_vue@3.2.37
+      vue-router: 4.0.16_vue@3.2.37
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1896,6 +1901,15 @@ packages:
       ansi-styles: 3.2.1
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
+    dev: false
+
+  /chalk/2.4.2:
+    resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
+    engines: {node: '>=4'}
+    dependencies:
+      ansi-styles: 3.2.1
+      escape-string-regexp: 1.0.5
+      supports-color: 5.5.0
 
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2099,7 +2113,7 @@ packages:
     dev: false
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
 
   /connect-history-api-fallback/1.6.0:
     resolution: {integrity: sha512-e54B99q/OUoH64zYYRf3HBP5z24G38h5D3qXu23JGRoigpX5Ss4r9ZnDk3g0Z8uQC2x2lPaJ+UlWBc1ZWBWdLg==}
@@ -2320,16 +2334,16 @@ packages:
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  /cosmiconfig-typescript-loader/2.0.2_6nq352wiaj44ir2lfenbt2ezwy:
+  /cosmiconfig-typescript-loader/2.0.2_x2utdhayajzrh747hktprshhby:
     resolution: {integrity: sha512-KmE+bMjWMXJbkWCeY4FJX/npHuZPNr9XF9q9CIQ/bpFwi1qHfCmSiKarrCcRa0LO4fWjk93pVoeRtJAkTGcYNw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 17.0.38
+      '@types/node': 17.0.45
       cosmiconfig: 7.0.1
-      ts-node: 10.8.1_6nq352wiaj44ir2lfenbt2ezwy
+      ts-node: 10.8.1_x2utdhayajzrh747hktprshhby
       typescript: 4.7.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -6451,7 +6465,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node/10.8.1_6nq352wiaj44ir2lfenbt2ezwy:
+  /ts-node/10.8.1_x2utdhayajzrh747hktprshhby:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
@@ -6470,7 +6484,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 17.0.38
+      '@types/node': 17.0.45
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3
