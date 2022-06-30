@@ -15,4 +15,13 @@ export const createPages = async (
       },
     })
   )
+  // 创建关于页面
+  app.pages.push(
+    await createPage(app, {
+      path: '/about',
+      frontmatter: {
+        layout: 'About',
+      },
+    })
+  )
 }
