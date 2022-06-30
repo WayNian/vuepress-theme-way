@@ -1,7 +1,11 @@
 <template>
   <Common>
-    <ArticleView v-if="frontmatter.home"></ArticleView>
-    <Transition v-if="!frontmatter.home" name="fade-slide-y" mode="out-in">
+    <Transition
+      name="fade-slide-y"
+      mode="out-in"
+      @before-enter="onBeforeEnter"
+      @before-leave="onBeforeLeave"
+    >
       <Page :key="pageData.path">
         <template #top>
           <slot name="page-top" />
@@ -21,10 +25,13 @@
 </template>
 
 <script setup lang="ts">
-import ArticleView from '@theme/ArticleView.vue'
 import Common from '@theme/Common.vue'
 import Page from '@theme/Page.vue'
-import { pageData, usePageFrontmatter } from '@vuepress/client'
-import type { WayThemePageFrontmatter } from '../../shared'
-const frontmatter = usePageFrontmatter<WayThemePageFrontmatter>()
+import { pageData } from '@vuepress/client'
+import { useScrollPromise } from '../composables'
+
+// handle scrollBehavior with transition
+const scrollPromise = useScrollPromise()
+const onBeforeEnter = scrollPromise.resolve
+const onBeforeLeave = scrollPromise.pending
 </script>

@@ -75,10 +75,10 @@ export const getBlogPlugin = (
         sorter,
         filter: () => true,
         path: '/',
-        layout: 'Layout',
+        layout: 'HomePage',
         frontmatter: () => ({
           title: 'Home',
-          layout: 'Layout',
+          layout: 'HomePage',
         }),
       },
     ],

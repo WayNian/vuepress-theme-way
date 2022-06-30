@@ -7,7 +7,7 @@ import type {
   WayThemePluginsOptions,
 } from '../shared'
 import { getPlugins } from './plugins'
-import { assignDefaultLocaleOptions } from './utils'
+import { assignDefaultLocaleOptions, createPages } from './utils'
 export interface DefaultThemeOptions extends WayThemeLocaleOptions {
   themePlugins?: WayThemePluginsOptions
 }
@@ -43,5 +43,8 @@ export const wayTheme = ({
       page.routeMeta.title = page.title
     },
     plugins: getPlugins(themePlugins, localeOptions),
+    onInitialized: async (app) => {
+      createPages(app, localeOptions)
+    },
   }
 }
