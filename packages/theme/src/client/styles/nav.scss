@@ -1,10 +1,14 @@
 @import './variables';
 
 .navbar {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   height: var(--navbar-height);
   background-color: var(--c-bg);
   transition: background-color var(--t-color);
+  z-index: 9;
   .navbar-layout {
     max-width: var(--homepage-width);
     margin: 0 auto;

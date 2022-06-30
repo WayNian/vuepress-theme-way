@@ -11,8 +11,6 @@
     width: var(--aside-width);
     min-width: var(--aside-min-width);
     height: min-content;
-    position: sticky;
-    top: 0.5rem /* 8/16 */;
   }
   .main-view {
     flex: 1;
@@ -26,8 +24,6 @@
     width: var(--aside-width);
     height: min-content;
     min-width: var(--aside-min-width);
-    position: sticky;
-    top: 0.5rem /* 8/16 */;
   }
   .person-view {
     position: relative;
