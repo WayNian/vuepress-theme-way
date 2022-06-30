@@ -3,6 +3,8 @@
   --c-brand: #3eaf7c;
   --c-brand-light: #4abf8a;
 
+  --c-primary: #178bcf;
+
   // background colors
   --c-bg: #ffffff;
   --c-bg-light: #f3f4f5;
@@ -21,7 +23,7 @@
   --c-text-normal: #eaeff5;
   --c-text-white: #ffffff;
   --c-text-author: #fb7299;
-  --c-text-link: #178bcf;
+  --c-text-link: var(--c-primary);
   --c-text-gray: #99a2aa;
 
   // border colors

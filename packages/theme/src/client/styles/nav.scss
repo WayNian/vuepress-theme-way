@@ -11,6 +11,7 @@
     padding: 0 var(--navbar-padding-v);
     display: flex;
     justify-content: space-between;
+    height: 100%;
   }
   .logo {
     height: var(--navbar-height);
@@ -38,6 +39,26 @@
       font-size: 0.875rem /* 14/16 */;
       cursor: pointer;
     }
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .switch-color {
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem /* 8/16 */;
+    cursor: pointer;
+    color: var(--c-text);
+    &:hover {
+      color: var(--c-primary);
+    }
+  }
+  .navbar-icon {
+    width: 1.5rem /* 24/16 */;
+    height: 1.5rem;
+    transition: color var(--t-color);
   }
 }
 
