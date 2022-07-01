@@ -11,10 +11,7 @@
 import type { PropType } from 'vue'
 import { computed } from 'vue'
 import type { WebLinkItem } from '../../shared'
-import bilibili from '../icons/bilibili.svg'
-import github from '../icons/github.svg'
-import weibo from '../icons/weibo.svg'
-import zhihu from '../icons/zhihu.svg'
+import { icons } from '../icons/'
 const props = defineProps({
   data: {
     type: Object as PropType<WebLinkItem>,
@@ -28,12 +25,6 @@ const props = defineProps({
   },
 })
 
-const icons = {
-  zhihu,
-  github,
-  bilibili,
-  weibo,
-}
 const link = computed(() => {
   let icon = icons[props.data.name]
   if (props.data.svg) {

@@ -4,21 +4,36 @@ export const webLinks: WebLinkItem[] = [
   {
     name: 'zhihu',
     url: 'https://www.zhihu.com/',
-    nickname: '愿君来生安',
+    nickname: '知乎',
   },
   {
     name: 'github',
-    url: '',
-    nickname: 'waynian',
+    url: 'https://github.com',
+    nickname: 'Github',
   },
   {
     name: 'bilibili',
-    url: '111',
-    nickname: '碎步灬流年',
+    url: 'https://bilibili.com',
+    nickname: 'Bilibili',
   },
   {
     name: 'weibo',
-    url: '111',
-    nickname: 'waynian',
+    url: 'https://weibo.com',
+    nickname: '微博',
+  },
+  {
+    name: 'twitter',
+    url: 'https://twitter.com',
+    nickname: 'Twitter',
+  },
+  {
+    name: 'juejin',
+    url: 'https://juejin.com',
+    nickname: '掘金',
+  },
+  {
+    name: 'csdn',
+    url: 'https://CSDN.com',
+    nickname: 'CSDN',
   },
 ]
