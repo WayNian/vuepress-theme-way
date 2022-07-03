@@ -16,9 +16,11 @@
     </aside>
   </div>
   <Footer></Footer>
+  <BackTop></BackTop>
 </template>
 
 <script setup lang="ts">
+import BackTop from '@theme/BackTop.vue'
 import Footer from '@theme/Footer.vue'
 import Navbar from '@theme/Navbar.vue'
 import PersonLink from '@theme/PersonLink.vue'
