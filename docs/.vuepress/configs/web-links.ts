@@ -23,17 +23,17 @@ export const webLinks: WebLinkItem[] = [
   },
   {
     name: 'twitter',
-    url: 'https://twitter.com',
+    url: 'https://mobile.twitter.com/home',
     nickname: 'Twitter',
   },
   {
     name: 'juejin',
-    url: 'https://juejin.com',
+    url: 'https://juejin.cn/',
     nickname: '掘金',
   },
   {
     name: 'csdn',
-    url: 'https://CSDN.com',
+    url: 'https://www.csdn.net/',
     nickname: 'CSDN',
   },
 ]
