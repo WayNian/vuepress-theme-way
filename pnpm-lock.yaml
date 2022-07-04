@@ -94,6 +94,7 @@ importers:
       '@waline/client': ^2.6.1
       axios: ^0.27.2
       sass: ^1.52.1
+      ts-debounce: ^4.0.0
       vue: ^3.2.36
       vue-router: ^4.0.16
       vuepress-plugin-blog2: 2.0.0-beta.84
@@ -112,6 +113,7 @@ importers:
       '@waline/client': 2.6.1
       axios: 0.27.2
       sass: 1.53.0
+      ts-debounce: 4.0.0
       vue: 3.2.37
       vue-router: 4.0.16_vue@3.2.37
       vuepress-plugin-blog2: 2.0.0-beta.84
