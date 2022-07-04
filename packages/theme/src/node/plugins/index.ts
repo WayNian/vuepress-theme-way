@@ -16,7 +16,7 @@ export const getPlugins = (
     // @vuepress/plugin-palette
     palettePlugin({ preset: 'sass' }),
     // @vuepress/plugin-prismjs
-    plugins.prismjs !== false ? prismjsPlugin() : [],
+    prismjsPlugin(),
     // @vuepress/plugin-theme-data
     themeDataPlugin({ themeData: localeOptions }),
     // vuepress-plugin-blog2
