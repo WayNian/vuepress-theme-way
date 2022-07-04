@@ -29,6 +29,7 @@
           </div>
         </div> -->
       </div>
+      <h1 class="content-title">{{ info.title }}</h1>
       <div class="content-author-info">
         <Avatar :url="personInfo.avatar" :width="48" :height="48" />
         <div class="flex-v ml-20">
@@ -36,7 +37,6 @@
           <span class="person-name">{{ info.date }}</span>
         </div>
       </div>
-      <h4 class="content-title">{{ info.title }}</h4>
       <slot name="content-top" />
       <article class="content">
         <Content />

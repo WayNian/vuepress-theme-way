@@ -43,10 +43,10 @@
     padding: 1rem 2rem;
   }
   .content-title {
-    font-size: 1.25rem /* 20/16 */;
+    font-size: 1.5rem /* 24/16 */;
     font-weight: bold;
     color: var(--c-text);
-    margin: 0;
+    margin: 1.25rem /* 20/16 */ 0;
     padding: 0 var(--navbar-padding-h);
   }
   .content {
