@@ -22,13 +22,13 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator',
+      title: 'Waynian',
+      description: 'Waynian的个人博客',
     },
     '/zh/': {
       lang: 'zh-CN',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器',
+      title: 'Waynian',
+      description: 'Waynian的个人博客',
     },
   },
 

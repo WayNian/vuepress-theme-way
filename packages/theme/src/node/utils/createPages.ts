@@ -12,6 +12,7 @@ export const createPages = async (
       path: '/links',
       frontmatter: {
         layout: 'Links',
+        title: '友链',
       },
     })
   )
@@ -21,6 +22,7 @@ export const createPages = async (
       path: '/products',
       frontmatter: {
         layout: 'Product',
+        title: '项目',
       },
     })
   )
@@ -30,6 +32,7 @@ export const createPages = async (
       path: '/about',
       frontmatter: {
         layout: 'About',
+        title: '关于我 ヾ(≧▽≦*)o',
       },
     })
   )
