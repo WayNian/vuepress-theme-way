@@ -7,7 +7,7 @@
     </div>
     <div class="article-data">
       <div class="article-data-content">
-        <span class="article-data-number">{{ data.commentTotal }}</span
+        <span class="article-data-number">{{ articles.items.length }}</span
         ><span class="article-data-title">文章</span>
       </div>
       <div class="article-data-content">
@@ -26,12 +26,13 @@
 import Avatar from '@theme/Avatar.vue'
 import Card from '@theme/Card.vue'
 import { computed } from 'vue'
+import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import type { PersonInfo } from '../../shared'
 import { useArticleData, useThemeLocaleData } from '../composables'
 
 const themeLocale = useThemeLocaleData()
 const data = useArticleData()
-
+const articles = useBlogType('post')
 // const data = computed(() => {
 //   return {
 //     commentTotal,
