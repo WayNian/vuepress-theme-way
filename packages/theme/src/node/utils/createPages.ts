@@ -15,6 +15,15 @@ export const createPages = async (
       },
     })
   )
+  // 创建项目页面
+  app.pages.push(
+    await createPage(app, {
+      path: '/products',
+      frontmatter: {
+        layout: 'Product',
+      },
+    })
+  )
   // 创建关于页面
   app.pages.push(
     await createPage(app, {
