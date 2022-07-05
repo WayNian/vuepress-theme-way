@@ -8,7 +8,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
-import { navbarZh, personInfo, sidebarEn } from './configs'
+import { navbarZh, personInfo } from './configs'
 import { linkGroup } from './configs/links'
 import { webLinks } from './configs/web-links'
 
@@ -21,11 +21,6 @@ export default defineUserConfig({
   // site-level locales config
   locales: {
     '/': {
-      lang: 'en-US',
-      title: 'Waynian',
-      description: 'Waynian的个人博客',
-    },
-    '/zh/': {
       lang: 'zh-CN',
       title: 'Waynian',
       description: 'Waynian的个人博客',
@@ -58,19 +53,10 @@ export default defineUserConfig({
       },
     ],
     locales: {
-      /**
-       * English locale config
-       *
-       * As the default locale of @vuepress/theme-default is English,
-       * we don't need to set all of the locale fields
-       */
       '/': {
         // navbar
         navbar: navbarZh,
-        // sidebar
-        sidebar: sidebarEn,
         // page meta
-        editLinkText: 'Edit this page on GitHub',
       },
     },
     links: linkGroup,
@@ -107,7 +93,7 @@ export default defineUserConfig({
         facetFilters: ['tags:v2'],
       },
       locales: {
-        '/zh/': {
+        '/': {
           placeholder: '搜索文档',
           translations: {
             button: {

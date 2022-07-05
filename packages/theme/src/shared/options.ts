@@ -2,7 +2,6 @@ import type { ThemeData } from '@vuepress/plugin-theme-data'
 import type { LocaleData } from '@vuepress/shared'
 import type { PersonInfo } from './about'
 import type { WalineOptions } from './comment'
-import type { WayThemeI18n } from './i18n'
 import type { LinkGroup } from './links'
 import type { NavbarConfig, SidebarConfig } from './nav'
 import type { WebLinkItem } from './web-links'
@@ -26,7 +25,7 @@ export interface WayThemePagesOptions {
 export type WayThemeLocaleOptions = WayThemeData
 
 export type WayThemeData = ThemeData<WayThemeLocaleData>
-export interface WayThemeLocaleData extends LocaleData, WayThemeI18n {
+export interface WayThemeLocaleData extends LocaleData {
   /**
    * Default color mode
    *
