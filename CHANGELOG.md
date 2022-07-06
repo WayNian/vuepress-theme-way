@@ -1,3 +1,31 @@
+# [2.0.0-beta.8](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2022-07-06)
+
+
+### Bug Fixes
+
+* 修复使用v-if导致打包后控制台报错的问题 ([ba8a2d8](https://github.com/WayNian/vuepress-theme-way/commit/ba8a2d804516ce9ed609f50cc24a7d1f8816289a))
+
+
+### Features
+
+* 更新依赖库版本 ([5ff059f](https://github.com/WayNian/vuepress-theme-way/commit/5ff059f513342d0d33a3f5a3ea55bd4aa8df27ae))
+* 去除主页README.md ([75b19f1](https://github.com/WayNian/vuepress-theme-way/commit/75b19f1fc9cc1bba028916dec6244854e65b67e6))
+* 添加关于页面 ([ee456ef](https://github.com/WayNian/vuepress-theme-way/commit/ee456efec29b2720e9a559e023ceb72081974223))
+* 文章总数显示 ([050127e](https://github.com/WayNian/vuepress-theme-way/commit/050127ee0e0d921de1ba99f78187f321bf9a041d))
+* 修改link地址 ([ceadcab](https://github.com/WayNian/vuepress-theme-way/commit/ceadcab93816f18b9048d78f9ecdf8d843933f26))
+* 增加底部跳转链接 ([d119cc1](https://github.com/WayNian/vuepress-theme-way/commit/d119cc11416940bf5d969f416136c9c89ad6742f))
+* 增加返回顶部UI ([0ac6ccd](https://github.com/WayNian/vuepress-theme-way/commit/0ac6ccd0e323b0ec972c2007e2f6043e9abde1b7))
+* 增加返回BackToTop ([e846c94](https://github.com/WayNian/vuepress-theme-way/commit/e846c94911ce3b34be19d016fde07888f4c94753))
+* 增加其他网站图标 ([ec8e081](https://github.com/WayNian/vuepress-theme-way/commit/ec8e0819436bc6101fae94f1d28c6ae4c2cca9b6))
+* 增加图标显示 ([99cf29d](https://github.com/WayNian/vuepress-theme-way/commit/99cf29d9eda049e8dceeca2d09f6e00be4ff5f23))
+* 增加项目页面 ([631c628](https://github.com/WayNian/vuepress-theme-way/commit/631c628977e6273cf35e3ccfd0470b9d93e91c43))
+* 增加颜色模式切换图标 ([c7a6926](https://github.com/WayNian/vuepress-theme-way/commit/c7a6926c0eac8b9addac48fa2fbeda3eea70802c))
+* 增加作者名称定义显示 ([5c3e1ed](https://github.com/WayNian/vuepress-theme-way/commit/5c3e1ed42889ef4d04a4a989a86315652e612b55))
+* 增加code美化 ([8fe6c0e](https://github.com/WayNian/vuepress-theme-way/commit/8fe6c0e1132b1b764f1933d4021803cb4578aa8f))
+* x修改滚动行为 ([efacac9](https://github.com/WayNian/vuepress-theme-way/commit/efacac976311c5e8f9e497fc40b4c0552fca664f))
+
+
+
 # [2.0.0-beta.7](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2022-06-29)
 
 
