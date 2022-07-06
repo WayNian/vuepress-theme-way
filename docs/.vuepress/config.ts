@@ -18,12 +18,32 @@ export default defineUserConfig({
   // set site base to default value
   base: '/',
   lang: 'zh-CN',
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: `/images/favicon-16x16.png`,
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: `/images/favicon-32x32.png`,
+      },
+    ],
+  ],
   // site-level locales config
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'Waynian',
-      description: 'Waynian的个人博客',
+      title: 'Wayian',
+      description: 'vuepress-theme-way',
     },
   },
 
@@ -34,31 +54,7 @@ export default defineUserConfig({
   // configure default theme
   theme: wayTheme({
     home: '/',
-    navbar: [
-      {
-        text: '首页',
-        link: '/',
-      },
-      {
-        text: '标签',
-        link: '/tags',
-      },
-      {
-        text: '友链',
-        link: '/links',
-      },
-      {
-        text: '关于',
-        link: '/about',
-      },
-    ],
-    locales: {
-      '/': {
-        // navbar
-        navbar: navbarZh,
-        // page meta
-      },
-    },
+    navbar: navbarZh,
     links: linkGroup,
     personInfo,
     webLinks,

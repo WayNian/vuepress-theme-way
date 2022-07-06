@@ -1,0 +1,15 @@
+{
+  "name": "waynian",
+  "short_name": "waynian",
+  "description": "Vue-powered Static Site Generator",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    {
+      "src": "/images/avatar.png",
+      "type": "image/png"
+    },
+  ]
+}
