@@ -9,6 +9,7 @@ export interface WayThemePostPager {
 export interface WayThemePostInfo extends Record<string, unknown> {
   title: string
   subtitle?: string
+  author?: string
   date?: string | null
   tags?: string[]
   headerImage?: string

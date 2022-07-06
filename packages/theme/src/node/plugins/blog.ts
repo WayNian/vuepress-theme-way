@@ -49,6 +49,7 @@ export const getBlogPlugin = (
     }): WayThemePostInfo => ({
       title: frontmatter.title || '',
       subtitle: frontmatter.subtitle || '',
+      author: frontmatter.author || 'way',
       date: frontmatter.date || null,
       tags: frontmatter.tags || [],
       headerImage: frontmatter.headerImage,

@@ -55,17 +55,10 @@ import { usePageFrontmatter } from '@vuepress/client'
 import { computed } from 'vue'
 import type { PersonInfo, WayThemePostFrontmatter } from '../../shared'
 import { useThemeLocaleData } from '../composables'
-const frontmatter = usePageFrontmatter<WayThemePostFrontmatter>()
+const info = usePageFrontmatter<WayThemePostFrontmatter>()
 
 const themeLocale = useThemeLocaleData()
 const personInfo = computed(() => {
   return themeLocale.value.personInfo as PersonInfo
-})
-
-const info = computed(() => {
-  return {
-    ...frontmatter.value,
-    date: new Date(frontmatter.value.date as string).toLocaleString(),
-  }
 })
 </script>

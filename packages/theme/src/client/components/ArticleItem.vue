@@ -3,7 +3,7 @@
     <div class="article-item-top">
       <Avatar :url="personInfo.avatar" :width="48" :height="48" />
       <div class="flex-v ml-20">
-        <a class="article-item-author">waynian</a>
+        <a class="article-item-author">{{ articleInfo.info.author }}</a>
         <span class="article-item-date">2019-10-10</span>
       </div>
     </div>
@@ -46,6 +46,7 @@ const props = defineProps({
     required: true,
   },
 })
+console.log(props.articleInfo)
 
 const themeLocale = useThemeLocaleData()
 
@@ -56,7 +57,6 @@ const personInfo = computed(() => {
 const info = computed(() => {
   return {
     ...props.articleInfo.info,
-    date: new Date(props.articleInfo.info.date as string).toLocaleString(),
     path: props.articleInfo.path,
   }
 })
