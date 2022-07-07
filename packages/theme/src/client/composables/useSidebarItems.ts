@@ -128,8 +128,6 @@ export const resolveArraySidebarItems = (
   const handleChildItem = (
     item: ResolvedSidebarItem | SidebarItem | string
   ): ResolvedSidebarItem => {
-    console.log('ResolvedSidebarItem', item)
-
     let childItem: ResolvedSidebarItem
     if (isString(item)) {
       childItem = useNavLink(item)
@@ -157,8 +155,6 @@ export const resolveArraySidebarItems = (
         children: headersToSidebarItemChildren(headers, sidebarDepth),
       }
     }
-    console.log('childItem', childItem)
-
     return childItem
   }
 
