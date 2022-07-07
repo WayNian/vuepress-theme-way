@@ -186,3 +186,20 @@ td {
 li {
   list-style: none;
 }
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--c-border);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: var(--c-text-gray);
+}
+
+:root {
+  scroll-behavior: smooth;
+}
