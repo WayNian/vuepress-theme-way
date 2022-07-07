@@ -5,5 +5,8 @@
 </template>
 <script setup lang="ts">
 import Common from '@theme/Common.vue'
-document.title = '哎呀，404了呢~ ( •̀ ω •́ )y' + ' | ' + document.title
+import { onMounted } from 'vue'
+onMounted(() => {
+  document.title = '哎呀，404了呢~ ( •̀ ω •́ )y' + ' | ' + document.title
+})
 </script>
