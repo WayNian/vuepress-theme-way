@@ -3,37 +3,17 @@
     <slot name="top" />
     <div class="theme-way-content">
       <div
+        v-if="info.cover"
         class="content-top"
         :style="{
-          backgroundImage: `url(https://pic.imgdb.cn/item/5d776c5c451253d1783b9e9b.jpg)`,
+          backgroundImage: `url(${info.cover})`,
         }"
-      >
-        <!-- <div
-          class="content-image-mask"
-          src=""
-        /> -->
-        <!-- <div class="content-top-info">
-          <div class="content-title">{{ info.title }}</div>
-          <div>
-            <span>{{ info.date }}</span> <span>大概需要2min读完</span>
-          </div>
-          <div class="content-tags">
-            <RouterLink
-              v-for="item in info.tags"
-              :key="item"
-              class="pointer"
-              :to="`/tags/${item}`"
-            >
-              #{{ item }}#</RouterLink
-            >
-          </div>
-        </div> -->
-      </div>
+      ></div>
       <h1 class="content-title">{{ info.title }}</h1>
       <div class="content-author-info">
         <Avatar :url="personInfo.avatar" :width="48" :height="48" />
         <div class="flex-v ml-20">
-          <span class="person-name">{{ personInfo.name }}</span>
+          <span class="person-name">{{ info.author || personInfo.name }}</span>
           <span class="person-name">{{ info.date }}</span>
         </div>
       </div>

@@ -1,10 +1,14 @@
 <template>
   <Card class="article-item-layout">
     <div class="article-item-top">
-      <Avatar :url="personInfo.avatar" :width="48" :height="48" />
+      <Avatar
+        :url="info.authorImage || personInfo.avatar"
+        :width="48"
+        :height="48"
+      />
       <div class="flex-v ml-20">
-        <a class="article-item-author">{{ articleInfo.info.author }}</a>
-        <span class="article-item-date">2019-10-10</span>
+        <a class="article-item-author">{{ info.author || personInfo.name }}</a>
+        <span class="article-item-date">{{ info.date }}</span>
       </div>
     </div>
     <div class="article-item-tags">
@@ -19,14 +23,15 @@
     </div>
     <div class="article-item-info">
       <div
+        v-if="info.cover"
         class="article-item-cover"
         :style="{
-          backgroundImage: `url(https://b3logfile.com/bing/20210102.jpg?imageView2/2/w/1280/format/jpg/interlace/1/q/100)`,
+          backgroundImage: `url(${info.cover})`,
         }"
       ></div>
       <RouterLink :to="info.path" class="article-item-text">
         <h3 class="article-item-title">{{ info.title }}</h3>
-        <p class="article-item-description">这是个测试 {{ info.subtitle }}</p>
+        <p class="article-item-description">{{ info.subtitle }}</p>
       </RouterLink>
     </div>
   </Card>
@@ -46,7 +51,6 @@ const props = defineProps({
     required: true,
   },
 })
-console.log(props.articleInfo)
 
 const themeLocale = useThemeLocaleData()
 

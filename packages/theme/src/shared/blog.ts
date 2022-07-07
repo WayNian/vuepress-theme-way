@@ -9,10 +9,22 @@ export interface WayThemePostPager {
 export interface WayThemePostInfo extends Record<string, unknown> {
   title: string
   subtitle?: string
+  editLink?: boolean
+  editLinkPattern?: string
+  lastUpdated?: boolean
   author?: string
-  date?: string | null
+  authorImage?: string
+  date?: string
+  /**
+   * 封面图片
+   */
+  cover?: string
   tags?: string[]
-  headerImage?: string
+  hide?: boolean
+  /**
+   *是否置顶
+   */
+  isTop?: boolean
   excerpt?: string
   next?: WayThemePostPager | null
   prev?: WayThemePostPager | null

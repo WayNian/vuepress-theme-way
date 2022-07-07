@@ -47,12 +47,9 @@ export const getBlogPlugin = (
       excerpt: string
       frontmatter: WayThemePostFrontmatter
     }): WayThemePostInfo => ({
-      title: frontmatter.title || '',
-      subtitle: frontmatter.subtitle || '',
-      author: frontmatter.author || 'way',
-      date: frontmatter.date || null,
+      ...frontmatter,
+      author: frontmatter.author,
       tags: frontmatter.tags || [],
-      headerImage: frontmatter.headerImage,
       excerpt,
     }),
     category: [

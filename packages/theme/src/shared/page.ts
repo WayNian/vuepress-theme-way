@@ -11,26 +11,6 @@ export interface WayThemePageFrontmatter {
   pageClass?: string
 }
 
-export interface WayThemeHomePageFrontmatter extends WayThemePageFrontmatter {
-  home: true
-  heroImage?: string
-  heroImageDark?: string
-  heroAlt?: string
-  heroText?: string | null
-  tagline?: string | null
-  actions?: {
-    text: string
-    link: string
-    type?: 'primary' | 'secondary'
-  }[]
-  features?: {
-    title: string
-    details: string
-  }[]
-  footer?: string
-  footerHtml?: boolean
-}
-
 export interface WayThemeNormalPageFrontmatter extends WayThemePageFrontmatter {
   home?: false
   editLink?: boolean
@@ -49,14 +29,17 @@ export interface WayThemePostFrontmatter extends WayThemePageFrontmatter {
   editLink?: boolean
   editLinkPattern?: string
   lastUpdated?: boolean
-  useHeaderImage?: boolean
   author?: string
+  authorImage?: string
   date?: string
-  headerImage?: string
-  headerMask?: string
-  headerImageCredit?: string
-  headerImageCreditLink?: string
-  catalog?: boolean
+  /**
+   * 封面图片
+   */
+  cover?: string
   tags?: string[]
   hide?: boolean
+  /**
+   *是否置顶
+   */
+  isTop?: boolean
 }
