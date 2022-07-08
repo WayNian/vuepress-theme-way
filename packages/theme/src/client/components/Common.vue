@@ -13,6 +13,7 @@
     <aside class="right-view">
       <SitePoem></SitePoem>
       <TagList></TagList>
+      <Catalog></Catalog>
     </aside>
   </div>
   <Footer></Footer>
@@ -21,6 +22,7 @@
 
 <script setup lang="ts">
 import BackToTop from '@theme/BackToTop.vue'
+import Catalog from '@theme/Catalog.vue'
 import Footer from '@theme/Footer.vue'
 import Navbar from '@theme/Navbar.vue'
 import PersonLink from '@theme/PersonLink.vue'
