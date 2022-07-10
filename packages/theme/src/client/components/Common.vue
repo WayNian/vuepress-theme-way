@@ -11,9 +11,9 @@
       </div>
     </main>
     <aside class="right-view">
-      <SitePoem></SitePoem>
-      <TagList></TagList>
-      <Catalog></Catalog>
+      <SitePoem v-show="!isPage"></SitePoem>
+      <TagList v-show="!isPage"></TagList>
+      <Catalog v-show="isPage"></Catalog>
     </aside>
   </div>
   <Footer></Footer>
@@ -29,6 +29,14 @@ import PersonLink from '@theme/PersonLink.vue'
 import PersonView from '@theme/PersonView.vue'
 import SitePoem from '@theme/SitePoem.vue'
 import TagList from '@theme/TagList.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+console.log('🚀 ~ file: Common.vue ~ line 35 ~ route', route)
+const isPage = computed(() => {
+  return route.path.includes('posts/')
+})
 </script>
 
 <style scoped></style>
