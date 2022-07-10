@@ -8,6 +8,8 @@
   margin-top: 1rem;
   padding: 0 1rem;
   .left-view {
+    position: sticky;
+    top: 1.25rem /* 20/16 */;
     width: var(--aside-width);
     min-width: var(--aside-min-width);
     height: min-content;
@@ -22,6 +24,8 @@
     min-height: calc(100vh - var(--navbar-height) - 4.125rem /* 66/16 */);
   }
   .right-view {
+    position: sticky;
+    top: 1.25rem /* 20/16 */;
     width: var(--aside-width);
     height: min-content;
     min-width: var(--aside-min-width);
