@@ -1,9 +1,9 @@
 @import './variables';
 
 .navbar {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: var(--navbar-height);
   background-color: var(--c-bg);

@@ -1,15 +1,16 @@
 @import './variables';
 
 .theme-way-layout {
+  --content-top: calc(var(--navbar-height) + 1rem);
   width: var(--homepage-width);
   max-width: 100%;
   margin: 0 auto;
   display: flex;
-  margin-top: 1rem;
+  margin-top: var(--content-top);
   padding: 0 1rem;
   .left-view {
     position: sticky;
-    top: 1.25rem /* 20/16 */;
+    top: var(--content-top);
     width: var(--aside-width);
     min-width: var(--aside-min-width);
     height: min-content;
@@ -25,7 +26,7 @@
   }
   .right-view {
     position: sticky;
-    top: 1.25rem /* 20/16 */;
+    top: var(--content-top);
     width: var(--aside-width);
     height: min-content;
     min-width: var(--aside-min-width);
