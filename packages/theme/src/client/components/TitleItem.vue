@@ -1,10 +1,9 @@
 <template>
   <ul>
     <li v-for="(item, index) in props.titleList" :key="item.slug">
-      <a :href="`#${item.slug}`" :class="`catalog-title-${item.level}`">{{
-        item.title
-      }}</a>
+      <a :href="`#${item.slug}`" class="catalog-title">{{ item.title }}</a>
       <TitleItem
+        v-if="item.children.length"
         :title-list="item.children"
         class="sub-title"
         :title-num="index + 1"
@@ -35,15 +34,12 @@ const props = defineProps({
 ul {
   margin: 0;
 }
-.catalog-title-1 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.catalog-title {
+  font-size: 0.875rem /* 14/16 */;
+  font-weight: normal;
 }
-.catalog-title-2 {
-  font-size: 1rem;
-  font-weight: bold;
-}
+
 .sub-title {
-  padding-left: 10px;
+  padding-left: 1.25rem /* 20/16 */;
 }
 </style>

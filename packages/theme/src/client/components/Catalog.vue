@@ -1,5 +1,6 @@
 <template>
   <Card v-if="page.headers.length" class="catalog">
+    <span>目录</span>
     <TitleItem :title-list="page.headers"> </TitleItem>
   </Card>
 </template>
