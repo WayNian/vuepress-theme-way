@@ -36,7 +36,7 @@ const handleScroll = (): void => {
     const anchor = document.querySelector(`#${item.slug}`)
     if (anchor) {
       const anchorTop = anchor.getBoundingClientRect().top
-      if (anchorTop < 0) {
+      if (anchorTop < 30 && anchorTop >= 0) {
         activeAnchor.value = `#${item.slug}`
       }
     }

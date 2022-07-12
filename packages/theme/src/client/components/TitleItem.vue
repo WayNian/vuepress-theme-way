@@ -14,6 +14,7 @@
         :title-list="item.children"
         class="sub-title"
         :title-num="index + 1"
+        :active-anchor="activeAnchor"
       >
       </TitleItem>
     </li>
