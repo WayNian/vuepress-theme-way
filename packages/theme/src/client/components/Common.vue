@@ -33,7 +33,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-console.log('🚀 ~ file: Common.vue ~ line 35 ~ route', route)
+
 const isPage = computed(() => {
   return route.path.includes('posts/')
 })

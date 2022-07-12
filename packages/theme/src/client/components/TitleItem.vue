@@ -1,7 +1,14 @@
 <template>
   <ul>
-    <li v-for="(item, index) in props.titleList" :key="item.slug">
-      <a :href="`#${item.slug}`" class="catalog-title">{{ item.title }}</a>
+    <li v-for="(item, index) in titleList" :key="item.slug">
+      <a
+        :href="`#${item.slug}`"
+        :class="[
+          { 'catalog-active': activeAnchor === `#${item.slug}` },
+          'catalog-title',
+        ]"
+        >{{ item.title }}
+      </a>
       <TitleItem
         v-if="item.children.length"
         :title-list="item.children"
@@ -18,7 +25,7 @@ import TitleItem from '@theme/TitleItem.vue'
 import type { PageHeader } from '@vuepress/shared'
 import type { PropType } from 'vue'
 
-const props = defineProps({
+defineProps({
   titleList: {
     type: Array as PropType<PageHeader[]>,
     required: true,
@@ -26,6 +33,10 @@ const props = defineProps({
   titleNum: {
     type: Number,
     default: null,
+  },
+  activeAnchor: {
+    type: String,
+    default: '',
   },
 })
 </script>
@@ -37,9 +48,13 @@ ul {
 .catalog-title {
   font-size: 0.875rem /* 14/16 */;
   font-weight: normal;
+  transition: color var(--t-color);
 }
 
 .sub-title {
   padding-left: 1.25rem /* 20/16 */;
+}
+.catalog-active {
+  color: var(--c-primary);
 }
 </style>

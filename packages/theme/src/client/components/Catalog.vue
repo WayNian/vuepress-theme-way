@@ -1,7 +1,8 @@
 <template>
   <Card v-if="page.headers.length" class="catalog">
     <span>目录</span>
-    <TitleItem :title-list="page.headers"> </TitleItem>
+    <TitleItem :title-list="page.headers" :active-anchor="route.hash">
+    </TitleItem>
   </Card>
 </template>
 
@@ -9,8 +10,10 @@
 import Card from '@theme/Card.vue'
 import TitleItem from '@theme/TitleItem.vue'
 import { usePageData } from '@vuepress/client'
+import { onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 const page = usePageData()
-console.log('🚀 ~ file: Catalog.vue ~ line 9 ~ page', page.value.headers)
+const route = useRoute()
 </script>
 
 <style scoped>
