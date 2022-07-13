@@ -1,6 +1,6 @@
 <template>
   <Navbar></Navbar>
-  <div class="theme-way-layout">
+  <div class="theme-way-layout main">
     <aside class="left-view">
       <PersonView></PersonView>
       <PersonLink></PersonLink>
