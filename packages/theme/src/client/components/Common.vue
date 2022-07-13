@@ -6,9 +6,7 @@
       <PersonLink></PersonLink>
     </aside>
     <main class="main-view">
-      <div class="main-layout">
-        <slot></slot>
-      </div>
+      <slot></slot>
     </main>
     <aside class="right-view">
       <SitePoem v-show="!isPage"></SitePoem>
