@@ -65,12 +65,21 @@
       transition: opacity var(--t-color);
     }
   }
+  .icon-menu {
+    display: none;
+  }
 }
 
 @media (max-width: $MQMobile) {
   .navbar {
     .navbar-menu {
       display: none;
+    }
+    .logo {
+      margin-left: 2rem;
+    }
+    .icon-menu {
+      display: inline-block;
     }
   }
 }
