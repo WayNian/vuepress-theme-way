@@ -7,7 +7,7 @@
   width: 100%;
   height: var(--navbar-height);
   background-color: var(--c-bg);
-  transition: background-color var(--t-color);
+  transition: background-color var(--t-color), transform var(--t-transform);
   z-index: 9;
   .navbar-layout {
     max-width: var(--homepage-width);
@@ -67,10 +67,26 @@
   }
 }
 
+.mobile-aside {
+  position: fixed;
+  width: var(--navbar-mobile-weight);
+  height: 100vh;
+  left: var(--navbar-mobile-left);
+  top: 0;
+  display: none;
+  transition: transform var(--t-transform);
+  z-index: 9;
+}
+.aside-show {
+  transform: translate3d(250px, 0, 0);
+}
 @media (max-width: $MQMobile) {
   .navbar {
     .navbar-menu {
       display: none;
     }
+  }
+  .mobile-aside {
+    display: block;
   }
 }

@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { debounce } from 'ts-debounce'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 const getScrollTop = (): number =>
   window.pageYOffset ||
@@ -36,6 +36,10 @@ onMounted(() => {
   scrollTop.value = getScrollTop()
 
   window.addEventListener('scroll', () => onScroll())
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('scroll', () => onScroll())
 })
 </script>
 

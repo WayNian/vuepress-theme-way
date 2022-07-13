@@ -1,13 +1,16 @@
 <template>
-  <nav class="navbar">
+  <nav :class="['navbar', { 'aside-show': isAsideShow }]">
     <div class="navbar-layout">
       <div class="flex">
-        <RouterLink to="/">
+        <!-- <RouterLink to="/">
           <div class="logo">
-            <!-- <img src="https://pic.imgdb.cn/item/5d804d9d451253d1783c4c25.png" /> -->
             <span class="navbar-title">Waynian</span>
           </div>
-        </RouterLink>
+        </RouterLink> -->
+        <div class="logo">
+          <!-- <img src="https://pic.imgdb.cn/item/5d804d9d451253d1783c4c25.png" /> -->
+          <span class="navbar-title" @click="handleAsideClick">Waynian</span>
+        </div>
 
         <ul class="navbar-menu">
           <li v-for="item in navLinks" :key="item.text">
@@ -58,10 +61,11 @@
       </div>
     </div>
   </nav>
+  <aside :class="['mobile-aside', { 'aside-show': isAsideShow }]"></aside>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import type { NavLink } from '../../shared'
 import { useColorMode, useThemeLocaleData } from '../composables'
 const isColorMode = useColorMode()
@@ -70,10 +74,16 @@ const themeLocale = useThemeLocaleData()
 const changeMode = (): void => {
   isColorMode.value = !isColorMode.value
 }
+const isAsideShow = ref(false)
 
 const navLinks = computed(() => {
   return themeLocale.value.navbar as NavLink[]
 })
+const handleAsideClick = (): void => {
+  isAsideShow.value = !isAsideShow.value
+  document.querySelector('.theme-way-layout')?.classList.toggle('aside-show')
+  document.querySelector('.footer')?.classList.toggle('aside-show')
+}
 </script>
 
 <style scoped></style>

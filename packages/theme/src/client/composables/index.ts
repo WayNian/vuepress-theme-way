@@ -1,7 +1,6 @@
 export * from './useColorMode'
 export * from './useThemeData'
 export * from './useNavLink'
-export * from './useSidebarItems'
 export * from './useBlog'
 export * from './useArticleData'
 export * from './useScrollPromise'
