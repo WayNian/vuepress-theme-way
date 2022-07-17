@@ -4,7 +4,6 @@ import {
   setupArticleData,
   setupBlogPages,
   setupColorMode,
-  setupSidebarItems,
   useScrollPromise,
 } from './composables'
 import { setupTags } from './composables/useTag'
@@ -20,7 +19,6 @@ export default defineClientConfig({
   },
   setup() {
     setupColorMode()
-    setupSidebarItems()
     setupBlogPages()
     setupArticleData()
     setupTags()
