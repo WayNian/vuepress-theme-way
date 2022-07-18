@@ -16,7 +16,7 @@
   </div>
   <Footer></Footer>
   <BackToTop></BackToTop>
-  <Aplayer></Aplayer>
+  <!-- <Aplayer></Aplayer> -->
 </template>
 
 <script setup lang="ts">
