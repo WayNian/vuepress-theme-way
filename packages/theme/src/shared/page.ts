@@ -30,6 +30,7 @@ export interface WayThemePostFrontmatter extends WayThemePageFrontmatter {
   lastUpdated?: boolean
   author?: string
   authorImage?: string
+  isPure?: boolean
   date?: string
   /**
    * 封面图片

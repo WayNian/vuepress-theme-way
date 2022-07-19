@@ -10,7 +10,7 @@
         }"
       ></div>
       <h1 class="content-title">{{ info.title }}</h1>
-      <div class="content-author-info">
+      <div v-if="!info.isPure" class="content-author-info">
         <Avatar :url="personInfo.avatar" :width="48" :height="48" />
         <div class="flex-v ml-20">
           <span class="person-name">{{ info.author || personInfo.name }}</span>
