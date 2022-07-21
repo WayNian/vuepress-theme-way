@@ -51,5 +51,8 @@
   }
   .content {
     padding: 0 var(--navbar-padding-h);
+    div {
+      overflow: hidden;
+    }
   }
 }
