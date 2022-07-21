@@ -47,8 +47,8 @@
     "ts-debounce": "^4.0.0",
     "vue": "^3.2.36",
     "vue-router": "^4.0.16",
-    "vuepress-plugin-aplayer2": "workspace:*",
-    "vuepress-plugin-blog2": "2.0.0-beta.84"
+    "vuepress-plugin-blog2": "2.0.0-beta.84",
+    "vuepress-plugin-way-player": "workspace:*"
   },
   "peerDependencies": {
     "sass-loader": "^13.0.0"

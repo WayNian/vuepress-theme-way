@@ -1,7 +1,7 @@
 import type { Plugin } from '@vuepress/core'
 import { path } from '@vuepress/utils'
 
-export const aplayerPlugin = (): Plugin => (app) => ({
+export const wayPlayerPlugin = (): Plugin => (app) => ({
   name: 'vuepress-plugin-aplayer',
 
   define: {
@@ -12,4 +12,4 @@ export const aplayerPlugin = (): Plugin => (app) => ({
   clientConfigFile: path.resolve(__dirname, '../client/config.js'),
 })
 
-export default aplayerPlugin
+export default wayPlayerPlugin

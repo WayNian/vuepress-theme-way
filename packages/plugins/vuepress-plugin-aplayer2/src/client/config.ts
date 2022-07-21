@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 
 import { defineClientConfig } from '@vuepress/client'
-import Aplayer from './Aplayer'
+import WayPlayer from './WayPlayer.vue'
 
 export default defineClientConfig({
   enhance: ({ app }) => {
-    app.component('Aplayer', Aplayer)
+    app.component('WayPlayer', WayPlayer)
   },
 })

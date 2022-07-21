@@ -1,11 +1,11 @@
 {
-  "name": "vuepress-plugin-aplayer2",
+  "name": "vuepress-plugin-way-player",
   "version": "2.0.0-beta.8",
-  "description": "Way theme of VuePress",
+  "description": "Way Player of VuePress",
   "keywords": [
     "vuepress-theme",
     "vuepress",
-    "theme",
+    "player",
     "way"
   ],
   "homepage": "https://github.com/WayNian",
@@ -33,7 +33,6 @@
     "@vuepress/client": "2.0.0-beta.48",
     "@vuepress/core": "2.0.0-beta.48",
     "@vuepress/utils": "2.0.0-beta.48",
-    "aplayer": "^1.10.1",
     "vue": "^3.2.36"
   },
   "peerDependenciesMeta": {
