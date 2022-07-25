@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-way",
-  "version": "2.0.0-beta.9",
+  "version": "2.0.0-beta.10",
   "description": "Way theme of VuePress",
   "keywords": [
     "vuepress-theme",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/WayNian/vuepress-theme-way.git"
   },
   "license": "Apache-2.0",
-  "author": "meteorlxy",
+  "author": "waynian",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
   "files": [
