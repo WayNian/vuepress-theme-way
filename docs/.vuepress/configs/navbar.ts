@@ -12,8 +12,12 @@ export const navbarZh = [
     link: '/links',
   },
   {
-    text: `项目`,
+    text: '项目',
     link: '/products',
+  },
+  {
+    text: '文档',
+    link: '/doc',
   },
   {
     text: '关于',
