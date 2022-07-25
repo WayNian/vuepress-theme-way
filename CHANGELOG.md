@@ -1,3 +1,35 @@
+# [2.0.0-beta.9](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2022-07-25)
+
+
+### Bug Fixes
+
+* 修复打包时node环境找不到document导致控制台报错的问题 ([25dfde7](https://github.com/WayNian/vuepress-theme-way/commit/25dfde7713894e67b432c0ab546723e30d0e515f))
+* 修复sticky失效的问题 ([8cadca2](https://github.com/WayNian/vuepress-theme-way/commit/8cadca256ac406faa8939ee1ff716e757d4dabb3))
+
+
+### Features
+
+* 更新依赖库 ([765ccf4](https://github.com/WayNian/vuepress-theme-way/commit/765ccf405985607c095e08b2dc3b5aa01eb29960))
+* 滚动切换锚点 ([0df3b07](https://github.com/WayNian/vuepress-theme-way/commit/0df3b073e88a5f572cfa345d6b559ef838c588be))
+* 锚点回显 ([5c282c6](https://github.com/WayNian/vuepress-theme-way/commit/5c282c68bf64efefa678d4afea23f65d37fb7ddb))
+* 去除about，使用md设置about页面 ([6f2bb4d](https://github.com/WayNian/vuepress-theme-way/commit/6f2bb4d372d23f0052c2873d61d7a32a65267d34))
+* 去除aplayer,不支持SSR ([1c52c8a](https://github.com/WayNian/vuepress-theme-way/commit/1c52c8aafb4cfe288da8d25b95ee8da878c811e4))
+* 删除多余的函数 ([f9c6e17](https://github.com/WayNian/vuepress-theme-way/commit/f9c6e173bd4c79d34305404a56892df8d7e19be0))
+* 完善滚动回显锚点 ([a446d83](https://github.com/WayNian/vuepress-theme-way/commit/a446d8394ca615113b49e4f1af06e004cfe279ce))
+* 右侧布局不同页面是否显示 ([b9bd8dd](https://github.com/WayNian/vuepress-theme-way/commit/b9bd8dd9cd865fe4f81474662db3c76edba24ac6))
+* 增加目录 ([fec9247](https://github.com/WayNian/vuepress-theme-way/commit/fec9247868343700d00a209d9aa6cb3d49b06e02))
+* 增加目录点击跳转 ([6c50d02](https://github.com/WayNian/vuepress-theme-way/commit/6c50d02b1d58be50d2853ae33c60ddb8ec47ce43))
+* 增加目录页 ([724169f](https://github.com/WayNian/vuepress-theme-way/commit/724169f84df9dc458b82f659d9f53a885313dbd0))
+* 增加文章封面图设置和展示 ([b1bc5ca](https://github.com/WayNian/vuepress-theme-way/commit/b1bc5ca1d59247d911619824095e02b4c813d68c))
+* 增加移动端菜单按钮 ([b60d74d](https://github.com/WayNian/vuepress-theme-way/commit/b60d74d869e94b13159183749b48dc2713246d36))
+* 增加移动端菜单栏 ([ced6315](https://github.com/WayNian/vuepress-theme-way/commit/ced6315d7133da8e62acd40a26224bcb83f614a3))
+* 增加移动端导航栏布局 ([a06768c](https://github.com/WayNian/vuepress-theme-way/commit/a06768c7e06efbbaa0539610c7d54e99ec5d1ca8))
+* 增加aplayer插件 ([de61cfe](https://github.com/WayNian/vuepress-theme-way/commit/de61cfef4659b4984146729673c148778d9e8b31))
+* 增加footer插槽 ([54a7c8c](https://github.com/WayNian/vuepress-theme-way/commit/54a7c8c823edb015139362cd503bf441585a5be1))
+* 增加player框架 ([3c74ee4](https://github.com/WayNian/vuepress-theme-way/commit/3c74ee467ecb822f90f1ac623700794eafee6fa6))
+
+
+
 # [2.0.0-beta.8](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2022-07-06)
 
 
