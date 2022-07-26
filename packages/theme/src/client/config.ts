@@ -4,9 +4,9 @@ import {
   setupArticleData,
   setupBlogPages,
   setupColorMode,
+  setupTags,
   useScrollPromise,
 } from './composables'
-import { setupTags } from './composables/useTag'
 
 export default defineClientConfig({
   enhance({ app, router }) {
