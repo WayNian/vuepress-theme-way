@@ -16,7 +16,7 @@
   </div>
   <Footer></Footer>
   <BackToTop></BackToTop>
-  <WayPlayer></WayPlayer>
+  <!-- <WayPlayer></WayPlayer> -->
 </template>
 
 <script setup lang="ts">

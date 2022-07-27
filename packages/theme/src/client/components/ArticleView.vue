@@ -12,12 +12,10 @@
 import ArticleItem from '@theme/ArticleItem.vue'
 import { pageviewCount } from '@waline/client'
 import { onMounted } from 'vue'
-import { useBlogCategory, useBlogType } from 'vuepress-plugin-blog2/lib/client'
+import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import { useThemeLocaleData } from '../composables'
 const themeLocale = useThemeLocaleData()
-
 const articles = useBlogType('post')
-const tags = useBlogCategory('tag')
 onMounted(() => {
   pageviewCount({
     serverURL: themeLocale.value.comments?.serverURL as string,
