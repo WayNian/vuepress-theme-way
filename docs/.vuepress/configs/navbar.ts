@@ -4,10 +4,6 @@ export const navbarZh = [
     link: '/',
   },
   {
-    text: '标签',
-    link: '/tags',
-  },
-  {
     text: '友链',
     link: '/links',
   },
