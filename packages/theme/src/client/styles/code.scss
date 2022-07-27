@@ -144,6 +144,9 @@ pre[class*='language-'] {
   .line-number {
     font-family: var(--font-family-code);
   }
+  li {
+    list-style: inside;
+  }
 }
 
 div[class*='language-'] {
