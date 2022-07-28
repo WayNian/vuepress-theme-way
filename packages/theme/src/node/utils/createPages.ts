@@ -21,7 +21,7 @@ export const createPages = async (
     await createPage(app, {
       path: '/products',
       frontmatter: {
-        layout: 'Product',
+        layout: 'Products',
         title: '项目',
       },
     })

@@ -1,0 +1,36 @@
+@import './variables';
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  .base-card {
+    margin-bottom: 0;
+  }
+  .product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.25rem /* 20/16 */;
+  }
+  .product-desc {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    font-size: 0.875rem /* 14/16 */;
+  }
+  .product-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform var(--t-transform);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+@media (max-width: $MQMobile) {
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

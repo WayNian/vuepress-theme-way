@@ -1,10 +1,14 @@
 import type { ThemeData } from '@vuepress/plugin-theme-data'
 import type { LocaleData } from '@vuepress/shared'
-import type { PersonInfo } from './about'
-import type { WalineOptions } from './comment'
-import type { LinkGroup } from './links'
-import type { NavbarConfig, SidebarConfig } from './nav'
-import type { WebLinkItem } from './web-links'
+import type {
+  LinkGroup,
+  NavbarConfig,
+  PersonInfo,
+  ProductItem,
+  SidebarConfig,
+  WalineOptions,
+  WebLinkItem,
+} from '.'
 
 interface ImageItem {
   path: string
@@ -202,4 +206,6 @@ export interface WayThemeLocaleData extends LocaleData {
   comments?: WalineOptions
 
   webLinks?: WebLinkItem[]
+
+  products?: ProductItem[]
 }

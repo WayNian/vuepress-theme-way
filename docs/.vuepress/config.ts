@@ -8,9 +8,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { wayTheme } from 'vuepress-theme-way'
-import { navbarZh, personInfo } from './configs'
-import { linkGroup } from './configs/links'
-import { webLinks } from './configs/web-links'
+import { linkGroup, navbarZh, personInfo, products, webLinks } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -58,6 +56,7 @@ export default defineUserConfig({
     links: linkGroup,
     personInfo,
     webLinks,
+    products,
     // 评论和统计相关
     comments: {
       'serverURL': 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
