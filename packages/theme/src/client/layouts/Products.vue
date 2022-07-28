@@ -6,7 +6,15 @@
           <a :href="item.url" target="_blank">
             <img class="product-img" :src="item.img" alt="" />
           </a>
-
+          <div>
+            <img
+              v-for="(badge, index) in item.badgeUrlList"
+              :key="index"
+              :src="badge"
+              alt=""
+              class="product-badge"
+            />
+          </div>
           <p class="product-desc">{{ item.description }}</p>
         </div>
       </Card>

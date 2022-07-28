@@ -16,17 +16,21 @@
   .product-desc {
     width: 100%;
     text-align: left;
-    padding: 0 20px;
+    margin: 0.3125rem /* 5/16 */ 0;
     font-size: 0.875rem /* 14/16 */;
   }
   .product-img {
-    width: 100px;
-    height: 100px;
+    width: 7.5rem /* 120/16 */;
+    height: 7.5rem /* 120/16 */;
+    margin-bottom: 0.3125rem /* 5/16 */;
     object-fit: contain;
     transition: transform var(--t-transform);
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
+  }
+  .product-badge {
+    margin-right: 0.3125rem /* 5/16 */;
   }
 }
 @media (max-width: $MQMobile) {
