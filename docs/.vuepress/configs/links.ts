@@ -2,35 +2,32 @@ import type { LinkGroup } from 'vuepress-theme-way'
 
 export const linkGroup: LinkGroup[] = [
   {
-    title: '大佬',
+    title: 'Test',
     children: [
       {
         url: 'http://www.baidu.com',
-        avatar: 'https://pic.imgdb.cn/item/5d9bfd5c451253d1782876e4.jpg',
+        avatar:
+          'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
         name: 'baidu',
         description: '百度一下，你就知道',
       },
       {
         url: 'http://www.baidu.com',
-        avatar: 'https://pic.imgdb.cn/item/5d9bfd5c451253d1782876e4.jpg',
+        avatar:
+          'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
         name: 'baidu11',
         description: '百度一下，你就知道',
       },
     ],
   },
   {
-    title: 'dev1',
+    title: 'Dev',
     children: [
       {
         url: 'http://www.baidu.com',
-        avatar: 'https://pic.imgdb.cn/item/5d9bfd5c451253d1782876e4.jpg',
+        avatar:
+          'https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png',
         name: 'baidu',
-        description: '百度一下，你就知道',
-      },
-      {
-        url: 'http://www.baidu.com',
-        avatar: 'https://pic.imgdb.cn/item/5d9bfd5c451253d1782876e4.jpg',
-        name: 'baidu11',
         description: '百度一下，你就知道',
       },
     ],

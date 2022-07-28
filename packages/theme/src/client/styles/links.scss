@@ -3,7 +3,7 @@
 .link {
   .link-item {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
   .link-item-card {
@@ -18,6 +18,10 @@
     height: 3.75rem /* 60/16 */;
     object-fit: cover;
     border-radius: 50%;
+  }
+  .link-title {
+    padding: 0;
+    margin: 0 0 0.625rem 0;
   }
   .link-name {
     margin-left: 10px;
