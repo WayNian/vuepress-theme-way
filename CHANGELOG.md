@@ -1,3 +1,22 @@
+# [2.0.0-beta.11](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.9...v2.0.0-beta.11) (2022-07-28)
+
+
+### Bug Fixes
+
+* 修复plugins版本号不更新的问题 ([ebda754](https://github.com/WayNian/vuepress-theme-way/commit/ebda754c818fde3440faaa15812253ee0606c556))
+
+
+### Features
+
+* 修改license为MIT ([f1275c3](https://github.com/WayNian/vuepress-theme-way/commit/f1275c340ce8fc9cfc37380b22f89392b801844d))
+* 优化链接显示 ([923f266](https://github.com/WayNian/vuepress-theme-way/commit/923f26652be34a146a1ed573813adae2264c2167))
+* 增加项目页 ([db3af94](https://github.com/WayNian/vuepress-theme-way/commit/db3af94aa18aed1c25533ffd459072a27e6bd33f))
+* 增加badge显示 ([ba45005](https://github.com/WayNian/vuepress-theme-way/commit/ba45005361481c877c9ad673936825b0e0ea6128))
+* 增加tag页面 ([0b7fba6](https://github.com/WayNian/vuepress-theme-way/commit/0b7fba672961762c9610b3486eaf4fc624cd4c83))
+* nav移除标签页 ([8ab5fcf](https://github.com/WayNian/vuepress-theme-way/commit/8ab5fcfcc17878836dd09ff29bf839596cf40a39))
+
+
+
 # [2.0.0-beta.10](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2022-07-28)
 
 
