@@ -22,7 +22,9 @@
             </div>
           </div>
           <div class="divider"></div>
-          <p class="link-description">{{ link.description }}</p>
+          <p class="link-description" :title="link.description">
+            {{ link.description }}
+          </p>
         </Card>
       </div>
     </div>

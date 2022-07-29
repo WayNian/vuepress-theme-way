@@ -59,7 +59,13 @@
     background-color: var(--c-button-border);
   }
   .link-description {
-    font-size: 0.875rem /* 14/16 */;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 }
 
