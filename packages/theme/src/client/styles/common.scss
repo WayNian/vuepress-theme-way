@@ -92,6 +92,7 @@
   box-shadow: 1px 1px 1px rgb(0 0 0 / 10%), 1px 1px 1px rgb(0 0 0 / 10%),
     1px 1px 1px rgb(0 0 0 / 10%);
   filter: var(--brightness);
+  transition: filter var(--t-transform);
 }
 
 @media (max-width: $MQ1200) {
