@@ -79,7 +79,7 @@ blockquote {
   border-left: 0.2rem solid var(--c-border-dark);
   margin: 1rem 0;
   padding: 0.25rem 0 0.25rem 1rem;
-
+  transition: all var(--t-color);
   & > p {
     margin: 0;
   }
