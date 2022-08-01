@@ -17,7 +17,7 @@
     "url": "git+https://github.com/WayNian/vuepress-theme-way.git"
   },
   "license": "MIT",
-  "author": "meteorlxy",
+  "author": "waynian",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
   "files": [
