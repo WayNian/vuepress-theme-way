@@ -250,6 +250,10 @@ div[class*='language-'] {
   }
 }
 
+.code-tabs-nav {
+  height: 2.75rem /* 44/16 */;
+}
+
 @each $lang in $codeLang {
   div[class*='language-'].ext-#{$lang} {
     &:before {

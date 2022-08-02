@@ -28,6 +28,24 @@ export const getPlugins = (
     mdEnhancePlugin({
       // 启用任务列表
       tasklist: true,
+      // 添加选项卡支持
+      tabs: true,
+      // 代码块分组
+      codetabs: true,
+      // 启用下角标功能
+      sub: true,
+      // 启用上角标
+      sup: true,
+      // 启用脚注
+      footnote: true,
+      // 开启标记
+      mark: true,
+      // 启用图片标记
+      imageMark: true,
+      // 启用图片大小
+      imageSize: true,
+      // 启用自定义对齐
+      align: true,
     }),
     // themeWayWaline({
     //   serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
