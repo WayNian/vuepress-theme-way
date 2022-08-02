@@ -20,6 +20,6 @@ isPure: true
 文档在写了，有什么使用问题或者新的需求，可以在评论区说明或者在[github](https://github.com/WayNian/vuepress-theme-way/issues)上提issue，我会尽量解决。
 
 ### TODO
-- [ ] 产品页
+- [x] 产品页
 - [ ] 文档编写
 - [ ] Bug修复
