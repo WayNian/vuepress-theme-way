@@ -147,6 +147,9 @@ pre[class*='language-'] {
   li {
     list-style: inside;
   }
+  a {
+    color: var(--c-primary);
+  }
 }
 
 div[class*='language-'] {
@@ -252,6 +255,18 @@ div[class*='language-'] {
 
 .code-tabs-nav {
   height: 2.75rem /* 44/16 */;
+}
+.footnotes-sep {
+  transition: all var(--t-transform);
+}
+.footnotes-list {
+  margin-left: 1rem;
+}
+.footnote-item {
+  list-style: decimal !important;
+  p {
+    display: inline-block;
+  }
 }
 
 @each $lang in $codeLang {
