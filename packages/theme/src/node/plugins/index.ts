@@ -46,6 +46,8 @@ export const getPlugins = (
       imageSize: true,
       // 启用自定义对齐
       align: true,
+      // 启用自定义容容器
+      container: true,
     }),
     // themeWayWaline({
     //   serverURL: 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',
