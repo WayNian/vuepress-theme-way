@@ -156,6 +156,7 @@ div[class*='language-'] {
   position: relative;
   background-color: var(--code-bg-color);
   border-radius: 6px;
+  margin-bottom: 10px;
 
   &::before {
     position: absolute;

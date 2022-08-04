@@ -11,25 +11,11 @@
     transition: background-color var(--t-color);
   }
   .content-top {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 2rem;
     width: 100%;
-    height: 26.46rem;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+    object-fit: cover;
     filter: var(--brightness);
     transition: all var(--t-transform);
-    // .content-image-mask {
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   left: 0;
-    //   top: 0;
-    //   background-color: rgb(0, 0, 0, 0.4);
-    // }
+
     .content-top-info {
       color: var(--c-text-white);
       z-index: 1;

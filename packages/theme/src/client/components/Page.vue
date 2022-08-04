@@ -2,13 +2,20 @@
   <main class="page">
     <slot name="top" />
     <div class="theme-way-content">
-      <div
+      <!-- <div
         v-if="info.cover"
         class="content-top"
         :style="{
           backgroundImage: `url(${info.cover})`,
         }"
-      ></div>
+      ></div> -->
+      <img
+        v-if="info.cover"
+        :src="info.cover"
+        class="content-top"
+        alt=""
+        srcset=""
+      />
       <h1 class="content-title">{{ info.title }}</h1>
       <div v-if="!info.isPure" class="content-author-info">
         <Avatar :url="personInfo.avatar" :width="48" :height="48" />
