@@ -23,4 +23,13 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style>
+:root {
+  --waline-theme-color: var(--c-brand);
+  --waline-active-color: var(--c-brand-light);
+}
+.wl-editor:focus,
+.wl-input:focus {
+  background: transparent;
+}
+</style>

@@ -45,3 +45,7 @@
     }
   }
 }
+.wl-panel,
+.wl-header {
+  transition: all var(--t-color);
+}
