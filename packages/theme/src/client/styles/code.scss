@@ -131,13 +131,13 @@ pre[class*='language-'] {
     overflow: auto;
 
     code {
-      color: #fff;
       padding: 0;
       background-color: transparent;
       border-radius: 0;
       overflow-wrap: unset;
       -webkit-font-smoothing: auto;
       -moz-osx-font-smoothing: auto;
+      transition: all var(--t-color);
     }
   }
 
@@ -157,6 +157,7 @@ div[class*='language-'] {
   background-color: var(--code-bg-color);
   border-radius: 6px;
   margin-bottom: 10px;
+  transition: all var(--t-color);
 
   &::before {
     position: absolute;
@@ -250,6 +251,7 @@ div[class*='language-'] {
       height: 100%;
       border-radius: 6px 0 0 6px;
       border-right: 1px solid var(--code-hl-bg-color);
+      transition: all var(--t-color);
     }
   }
 }

@@ -69,8 +69,8 @@
   --card-shadow: 0 1px 3px rgb(26 26 26 / 10%);
 
   // code blocks vars
-  --code-bg-color: #282c34;
-  --code-hl-bg-color: rgba(0, 0, 0, 0.66);
+  --code-bg-color: #ecf4fa;
+  --code-hl-bg-color: var(--c-border);
   --code-ln-color: #9e9e9e;
   --code-ln-wrapper-width: 3.5rem;
 

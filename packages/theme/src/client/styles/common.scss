@@ -44,6 +44,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       filter: var(--brightness);
+      transition: filter var(--t-transform);
     }
     .person-info {
       position: absolute;
