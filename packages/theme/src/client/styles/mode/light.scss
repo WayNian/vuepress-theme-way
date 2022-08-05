@@ -72,7 +72,11 @@
   --code-bg-color: #ecf4fa;
   --code-hl-bg-color: var(--c-border);
   --code-ln-color: #9e9e9e;
+  --code-highlight-line-color: #d8e9f6;
+  --code-tabs-nav-bg-color: #c3def3;
+  --code-tabs-nav-hover-color: var(--code-highlight-line-color);
   --code-ln-wrapper-width: 3.5rem;
+  --code-tabs-nav-text-color: var(--c-text);
 
   --aside-width: 21%;
   --aside-min-width: 15.25rem;

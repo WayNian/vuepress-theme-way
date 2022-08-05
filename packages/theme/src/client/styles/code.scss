@@ -262,6 +262,15 @@ div[class*='language-'] {
 .footnotes-sep {
   transition: all var(--t-transform);
 }
+.code-tabs-nav-tab {
+  transition: background-color var(--t-transform);
+}
+.tab-item {
+  transition: background var(--t-transform);
+}
+.tab-list {
+  transition: border var(--t-transform);
+}
 .footnotes-list {
   margin-left: 1rem;
   line-height: 1 !important;

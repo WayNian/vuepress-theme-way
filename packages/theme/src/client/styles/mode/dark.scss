@@ -36,6 +36,9 @@ html.dark {
   // code blocks vars
   --code-hl-bg-color: #363b46;
   --code-bg-color: #282c34;
+  --code-tabs-nav-bg-color: #1d2536;
+  --code-highlight-line-color: #222935;
+  --code-tabs-nav-hover-color: var(--code-highlight-line-color);
 }
 
 // plugin-docsearch
