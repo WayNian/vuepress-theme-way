@@ -5,7 +5,7 @@ isPure: true
 ## 安装
 
 ```bash
-pnpm add vuepress-theme-way@2.0.0-beta.9
+pnpm add vuepress-theme-way@next
 ```
 ## 分组
 
@@ -30,19 +30,19 @@ Banana
 @tab pnpm
 
 ```bash
-pnpm add -D vuepress-theme-hope@next
+pnpm add -D vuepress-theme-way@next
 ```
 
 @tab yarn
 
 ```bash
-yarn add -D vuepress-theme-hope@next
+yarn add -D vuepress-theme-way@next
 ```
 
 @tab:active npm
 
 ```bash
-npm i -D vuepress-theme-hope@next
+npm i -D vuepress-theme-way@next
 ```
 
 :::
@@ -57,19 +57,19 @@ npm i -D vuepress-theme-hope@next
 @tab pnpm
 
 ```bash
-pnpm add -D vuepress-theme-hope@next
+pnpm add -D vuepress-theme-way@next
 ```
 
 @tab yarn
 
 ```bash
-yarn add -D vuepress-theme-hope@next
+yarn add -D vuepress-theme-way@next
 ```
 
 @tab:active npm
 
 ```bash
-npm i -D vuepress-theme-hope@next
+npm i -D vuepress-theme-way@next
 ```
 
 :::
@@ -81,19 +81,19 @@ npm i -D vuepress-theme-hope@next
 @tab pnpm
 
 ```bash
-pnpm add -D vuepress-plugin-md-enhance@next
+pnpm add -D vuepress-theme-way@next
 ```
 
 @tab yarn
 
 ```bash
-yarn add -D vuepress-plugin-md-enhance@next
+yarn add -D vuepress-theme-way@next
 ```
 
 @tab:active npm
 
 ```bash
-npm i -D vuepress-plugin-md-enhance@next
+npm i -D vuepress-theme-way@next
 ```
 
 :::

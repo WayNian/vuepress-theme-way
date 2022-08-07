@@ -18,8 +18,3 @@ isPure: true
 由于目前还处于beta版本，每次`vuepress`发布新版本，都有可能有破坏性的更新，当前主题也需要跟着更新，目前框架基本搭建完成，内容后续慢慢添加。
 
 文档在写了，有什么使用问题或者新的需求，可以在评论区说明或者在[github](https://github.com/WayNian/vuepress-theme-way/issues)上提issue，我会尽量解决。
-
-### TODO
-- [x] 产品页
-- [ ] 文档编写
-- [ ] Bug修复
