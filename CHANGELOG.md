@@ -1,3 +1,14 @@
+# [2.0.0-beta.13](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2022-08-08)
+
+
+### Features
+
+* 引入md增强其他配置 ([b0c5f35](https://github.com/WayNian/vuepress-theme-way/commit/b0c5f35188728bc162ca2bf8aba4c54584a17d19))
+* 增加自定义容器 ([6056f8e](https://github.com/WayNian/vuepress-theme-way/commit/6056f8ec9e898ec58fbf233181d8a6bdf6f4e59a))
+* 增强md ([1e09199](https://github.com/WayNian/vuepress-theme-way/commit/1e091998decbcdccc447025454fb34dbdb7d215a))
+
+
+
 # [2.0.0-beta.12](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2022-07-31)
 
 
