@@ -11,7 +11,7 @@
     <aside class="right-view">
       <SitePoem v-show="!isPage"></SitePoem>
       <TagList v-show="!isPage"></TagList>
-      <Catalog v-show="isPage"></Catalog>
+      <Catalog></Catalog>
     </aside>
   </div>
   <Footer></Footer>
