@@ -24,16 +24,12 @@
     height: 7.5rem /* 120/16 */;
     margin-bottom: 0.3125rem /* 5/16 */;
     object-fit: contain;
-    filter: var(--brightness);
-    transition: all var(--t-transform);
     &:hover {
       transform: scale(1.1);
     }
   }
   .product-badge {
     margin-right: 0.3125rem /* 5/16 */;
-    filter: var(--brightness);
-    transition: all var(--t-transform);
   }
 }
 @media (max-width: $MQMobile) {

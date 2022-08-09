@@ -1,6 +1,9 @@
 <template>
   <Card class="person-view">
-    <div class="person-view-bg"></div>
+    <img
+      class="person-view-bg"
+      src="https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg"
+    />
     <div class="person-info">
       <Avatar :url="personInfo.avatar" />
       <span class="person-name">{{ personInfo.name }}</span>

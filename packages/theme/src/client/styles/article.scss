@@ -37,6 +37,7 @@
     background-position: 50% 50%;
     background-size: cover;
     filter: var(--brightness);
+    transition: filter var(--t-color);
     overflow: hidden;
   }
   .article-item-text {
@@ -47,7 +48,7 @@
   .article-item-title {
     font-size: 1rem;
     position: relative;
-    transition: color var(--t-transform);
+    transition: color var(--t-color);
     &:hover {
       color: var(--c-text-link);
     }
@@ -56,7 +57,7 @@
     font-size: 0.75rem /* 12/16 */;
     color: var(--c-text-gray);
     margin: 0.3125rem /* 5/16 */ 0 0 0;
-    transition: color var(--t-transform);
+    transition: color var(--t-color);
   }
 }
 

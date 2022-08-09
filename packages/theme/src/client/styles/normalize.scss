@@ -46,7 +46,10 @@ a {
   overflow-wrap: break-word;
   cursor: pointer;
 }
-
+img {
+  filter: var(--brightness);
+  transition: filter var(--t-transform);
+}
 p a code {
   font-weight: 400;
   color: var(--c-text);

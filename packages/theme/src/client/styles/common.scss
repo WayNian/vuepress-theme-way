@@ -40,11 +40,7 @@
       left: 0;
       width: 100%;
       height: 4rem /* 64/16 */;
-      background-image: url(https://pic.imgdb.cn/item/629da6b0094754312907e9d0.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      filter: var(--brightness);
-      transition: filter var(--t-transform);
+      object-fit: cover;
     }
     .person-info {
       position: absolute;
@@ -92,8 +88,6 @@
   overflow: hidden;
   box-shadow: 1px 1px 1px rgb(0 0 0 / 10%), 1px 1px 1px rgb(0 0 0 / 10%),
     1px 1px 1px rgb(0 0 0 / 10%);
-  filter: var(--brightness);
-  transition: filter var(--t-transform);
 }
 
 @media (max-width: $MQ1200) {
