@@ -45,6 +45,7 @@ $iconSize: 1rem;
   display: flex;
   align-items: center;
   margin-bottom: 0.625rem /* 10/16 */;
+
   &-icon {
     width: $iconSize;
     height: $iconSize;
@@ -53,6 +54,7 @@ $iconSize: 1rem;
   &-url {
     font-size: 0.875rem /* 14/16 */;
     font-weight: 400;
+    transition: color var(--t-color);
   }
 }
 </style>
