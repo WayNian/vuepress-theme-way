@@ -7,7 +7,9 @@ isPure: true
 ```bash
 pnpm add vuepress-theme-way@next
 ```
-## 分组
+
+## Markdown
+### 分组
 
 ::: tabs#fruit
 
@@ -21,7 +23,7 @@ Banana
 
 :::
 
-## 代码分组
+### 代码分组
 
 安装 VuePress Theme Hope:
 
@@ -101,7 +103,7 @@ npm i -D vuepress-theme-way@next
 
 ::::
 
-## 段落位置
+### 段落位置
 
 ::: center
 要居中的段落
@@ -112,11 +114,11 @@ npm i -D vuepress-theme-way@next
 要居右的段落
 :::
 
-## 上下标注
+### 上下标注
 - 19^th^
 - H~2~O
 
-## 脚注
+### 脚注
 脚注 1 链接[^first].
 
 脚注 2 链接[^second].

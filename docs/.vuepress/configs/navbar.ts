@@ -13,7 +13,7 @@ export const navbarZh = [
   },
   {
     text: '文档',
-    link: '/doc',
+    link: '/docs',
   },
   {
     text: '关于',
