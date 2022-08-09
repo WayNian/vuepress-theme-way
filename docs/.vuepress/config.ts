@@ -57,6 +57,7 @@ export default defineUserConfig({
     personInfo,
     webLinks,
     products,
+    poem: '与恶龙缠斗过久,自身亦成为恶龙;凝视深渊过久,深渊将回以凝视。',
     // 评论和统计相关
     comments: {
       'serverURL': 'https://theme-way-waline-2e8axyq7o-waynian.vercel.app',

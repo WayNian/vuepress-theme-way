@@ -1,19 +1,16 @@
 <template>
-  <Card>
+  <Card v-if="themeLocale.poem">
     <p class="poem">
-      梦后楼台高锁，酒醒帘幕低垂。去年春恨却来时。落花人独立，微雨燕双飞。
-      <br />
-      记得小蘋初见，两重心字罗衣。琵琶弦上说相思。当时明月在，曾照彩云归。
+      {{ themeLocale.poem }}
     </p>
-    <div class="poem-title">
-      --
-      <h6>《临江仙·梦后楼台高锁》</h6>
-    </div>
   </Card>
 </template>
 
 <script setup lang="ts">
 import Card from '@theme/Card.vue'
+import { useThemeLocaleData } from '../composables'
+
+const themeLocale = useThemeLocaleData()
 </script>
 
 <style lang="scss">

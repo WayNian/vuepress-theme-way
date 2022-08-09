@@ -208,4 +208,6 @@ export interface WayThemeLocaleData extends LocaleData {
   webLinks?: WebLinkItem[]
 
   products?: ProductItem[]
+
+  poem?: string
 }
