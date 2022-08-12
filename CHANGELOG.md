@@ -1,3 +1,13 @@
+# [2.0.0-beta.14](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2022-08-12)
+
+
+### Features
+
+* 去除目录的隐藏 ([9a37362](https://github.com/WayNian/vuepress-theme-way/commit/9a37362b1a866e69fc62305696ee050e4b72d8ee))
+* 增加诗词的配置 ([c6f859a](https://github.com/WayNian/vuepress-theme-way/commit/c6f859a0f98874be5693f689f57969c76f530380))
+
+
+
 # [2.0.0-beta.13](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2022-08-08)
 
 
