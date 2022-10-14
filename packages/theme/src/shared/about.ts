@@ -10,3 +10,8 @@ export interface PersonInfo {
   tags?: string[]
   links?: PersonLinks[]
 }
+
+export interface WebsiteInfo {
+  isShowThemeAuth?: boolean
+  beian: string
+}

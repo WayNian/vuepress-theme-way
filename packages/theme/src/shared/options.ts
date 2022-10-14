@@ -8,6 +8,7 @@ import type {
   SidebarConfig,
   WalineOptions,
   WebLinkItem,
+  WebsiteInfo,
 } from '.'
 
 interface ImageItem {
@@ -200,6 +201,8 @@ export interface WayThemeLocaleData extends LocaleData {
   footer?: string
 
   personInfo?: PersonInfo
+
+  websiteInfo?: WebsiteInfo
 
   links?: LinkGroup[]
 

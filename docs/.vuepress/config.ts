@@ -56,6 +56,10 @@ export default defineUserConfig({
     links: linkGroup,
     personInfo,
     webLinks,
+    websiteInfo: {
+      isShowThemeAuth: true,
+      beian: '苏ICP备18061251号',
+    },
     products,
     poem: '与恶龙缠斗过久,自身亦成为恶龙;凝视深渊过久,深渊将回以凝视。',
     // 评论和统计相关
