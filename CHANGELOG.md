@@ -1,3 +1,17 @@
+# [2.0.0-beta.15](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.14...v2.0.0-beta.15) (2022-10-14)
+
+
+### Bug Fixes
+
+* 修改日期格式，解决排序错误的问题 ([f1a5331](https://github.com/WayNian/vuepress-theme-way/commit/f1a53315fb2554fb67adf82706bc55b05c6e4b40))
+
+
+### Features
+
+* 增加底部备案号配置 ([36a031a](https://github.com/WayNian/vuepress-theme-way/commit/36a031a722b0ed66c4c044b763bf821eec8618fa))
+
+
+
 # [2.0.0-beta.14](https://github.com/WayNian/vuepress-theme-way/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2022-08-12)
 
 
